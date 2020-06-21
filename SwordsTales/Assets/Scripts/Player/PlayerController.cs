@@ -11,7 +11,9 @@ namespace Player
         [SerializeField] private Vector3 vector3direction;
         [SerializeField] private Vector2 direction;
         private float trueDirection;
+        
         private Rigidbody2D _rigidbody;
+        
         [SerializeField]  private bool isGrounded;
         public Transform groundCheck;
        
@@ -25,8 +27,10 @@ namespace Player
         
         private bool _jumpAir;
         public int extraJumpsValue;
+        
         private static readonly int Speed = Animator.StringToHash("Speed");
         private static readonly int IsJumping = Animator.StringToHash("isJumping");
+        private static readonly int IsJumpingEnd = Animator.StringToHash("isJumpingEnd");
 
         private void Start()
         {
@@ -40,8 +44,6 @@ namespace Player
         private void FixedUpdate()
         {
             Grounded();
-
-
         }
         
         private void Awake()
@@ -53,6 +55,7 @@ namespace Player
 
         private void Update()
         {
+            playerAnimator.SetBool(IsJumping,!isGrounded);
             playerAnimator.SetFloat(Speed, trueDirection);
             trueDirection = Math.Abs(Input.GetAxisRaw("Horizontal"));
             if (isGrounded)
@@ -61,8 +64,8 @@ namespace Player
             }
             if (Input.GetKey(KeyCode.Space) && extraJumps > 0 && isGrounded)
             {
-                Jump();
-                playerAnimator.SetBool(IsJumping,true);
+                
+                Invoke(nameof(Jump),0.0f);
             }
 
             if (Input.GetButton("Horizontal"))
@@ -79,7 +82,7 @@ namespace Player
     
     
 
-        public override void ReceiveDamage()
+        public override void ReceiveDamage(int damage)
         {
            
             Debug.Log(lives);
@@ -104,15 +107,13 @@ namespace Player
             {
                 isGrounded = false;
             }
+            
         }
         
         private void Run(){
            
             vector3direction = transform.right * Input.GetAxisRaw("Horizontal");
             
-            
-
-           
             var position = transform.position;
             position = Vector3.MoveTowards(position, position + vector3direction,speed * Time.deltaTime );
             transform.position = position;
@@ -123,13 +124,13 @@ namespace Player
                 _playerSpriteRenderer.flipX = true;
                 direction = Vector2Int.right;
             }
+            
             if (vector3direction.x > 0.9)
             {
                 
                 _playerSpriteRenderer.flipX = false;
                 direction = Vector2Int.left;
             }
-            
             
             if (direction == Vector2Int.left)
             {
@@ -144,6 +145,5 @@ namespace Player
         }
     
 }
-   
-
+    
 }

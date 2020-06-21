@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Lenovo\.Rider2019.2\config\scratches" t="IncludeRecursive" />
@@ -10,10 +10,22 @@
         <e p="sc.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CheckGround.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="Enemy.cs" t="Include" />
+            <e p="HellSkull.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
+            <e p="PlayerCombat.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="Unit.cs" t="Include" />
+        </e>
+        <e p="Sprites" t="Include">
+          <e p="Monsters" t="Include">
+            <e p="Gothicvania" t="Include">
+              <e p="public-license.txt" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

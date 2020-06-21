@@ -11,7 +11,7 @@ public class Unit : MonoBehaviour
     
     
 
-    public virtual void ReceiveDamage()
+    public virtual void ReceiveDamage(int damage)
     {
     }
 }
