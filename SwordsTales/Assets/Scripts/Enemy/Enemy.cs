@@ -5,7 +5,7 @@ namespace Enemy
     public class Enemy : Unit
     {
         [SerializeField] private float _maxhealth;
-        private float _currentHealth;
+        [SerializeField] private float _currentHealth;
 
         public float CurrentHealth
         {
