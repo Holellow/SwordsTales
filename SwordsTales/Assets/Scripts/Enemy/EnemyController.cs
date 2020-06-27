@@ -1,4 +1,5 @@
-﻿using Packages.Rider.Editor.Util;
+﻿using System;
+using Packages.Rider.Editor.Util;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,12 +16,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float wallCheckDistance;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float maxHealth;
-    [SerializeField] private float lastTouchDamageTime;
     [SerializeField] private float touchDamage;
     [SerializeField] private float touchDamageCooldown;
     [SerializeField] private float touchDamageWidth;
     [SerializeField] private float touchDamageHeight;
-    
     
     [SerializeField] private float knockbackDuration;
     
@@ -47,6 +46,7 @@ public class EnemyController : MonoBehaviour
     private float _currentHealth;
     private float knockbackStartTime;
     private float[] attackDetails = new float[2];
+    private float lastTouchDamageTime;
     
     private int _facingDirection;
     private int _damageDirection;
@@ -63,7 +63,8 @@ public class EnemyController : MonoBehaviour
         _currentHealth = maxHealth;
         _facingDirection = 1;
     }
-    
+
+   
     private void Update()
     {
         switch (_currentState)
@@ -190,13 +191,13 @@ public class EnemyController : MonoBehaviour
             touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
 
             Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight,PlayerMask);
-
+            
             if (hit != null)
             {
                 lastTouchDamageTime = Time.time;
                 attackDetails[0] = touchDamage;
                 attackDetails[1] = alive.transform.position.x;
-                hit.SendMessage("ReceiveDamage",attackDetails);
+                hit.SendMessage("Damage",attackDetails);
             }
         }
     }
@@ -235,7 +236,17 @@ public class EnemyController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        Vector2 botLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - touchDamageHeight / 2);
+        Vector2 botRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y - touchDamageHeight / 2);;
+        Vector2 topRight = new Vector2(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + touchDamageHeight / 2);;
+        Vector2 topLeft = new Vector2(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y + touchDamageHeight / 2);
+        
         Gizmos.DrawLine(groundCheck.position,new Vector2(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
         Gizmos.DrawLine(wallCheck.position,new Vector2(wallCheck.position.x - wallCheckDistance, wallCheck.position.y));
+       
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(topLeft, topRight);
+        Gizmos.DrawLine(topLeft, botLeft);
+        Gizmos.DrawLine(topRight, botRight);
     }
 }

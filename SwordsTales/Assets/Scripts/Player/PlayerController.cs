@@ -5,16 +5,13 @@ using UnityEngine.Serialization;
 
 namespace Player
 {
-    
-    
-    public class PlayerController : Unit
+    public class PlayerController : MonoBehaviour
     {
         [SerializeField] private float knockbackDuration;
         [SerializeField] private float jumpForce = 15.0f;
         [SerializeField] private float speed = 3.0f;
         [SerializeField] private float direction;
-        [SerializeField] private float receiveDamageJump;
-        
+
         [SerializeField] private bool isGrounded;
         [SerializeField] private bool isFacingRight = true;
         
@@ -30,7 +27,6 @@ namespace Player
         public LayerMask whatIsGround;
         
         private SpriteRenderer _playerSpriteRenderer;
-        
         private Rigidbody2D _rigidbody;
        
         private static readonly int Speed = Animator.StringToHash("Speed");
@@ -46,7 +42,7 @@ namespace Player
         
         private bool _isDashing;
         private bool _isJumping;
-        private bool _knockback;
+        [SerializeField] private bool _knockback;
         
         public float groundCheckRadius;
         public float dashTime;
@@ -66,11 +62,15 @@ namespace Player
             _playerSpriteRenderer = GetComponent<SpriteRenderer>();
 
         }
-        
+
+        public bool GetDashState()
+        {
+            return _isDashing;
+        }
         private void FixedUpdate()
         {
             Grounded();
-            if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            if(Input.GetKeyDown(KeyCode.Space) && isGrounded && !_knockback)
             {
                 Jump();
                 playerAnimator.SetBool(IsJumping,true);
@@ -82,13 +82,13 @@ namespace Player
             direction = Input.GetAxisRaw("Horizontal");
             CheckMovementDirection();
             CheckDash();
-            
-            if (Input.GetButton("Horizontal") ) 
+            CheckKnockback();
+            if (Input.GetButton("Horizontal") && !_knockback ) 
             {
                 Run();
             }
 
-            if (Input.GetButtonDown("Dash"))
+            if (Input.GetButtonDown("Dash") && !_knockback)
             {
                 if (Time.time >= _lastDash + dashCooldown)
                 {
@@ -96,11 +96,26 @@ namespace Player
                 }
             }
         }
+
+        public void knockback(int direction)
+        {
+            _knockback = true;
+            knockbackStartTime = Time.time;
+            _rigidbody.velocity = new Vector2(knockbackSpeed.x * direction,knockbackSpeed.y);
+        }
+
+        private void CheckKnockback()
+        {
+            if (Time.time >= knockbackStartTime + knockbackDuration && _knockback)
+            {
+                _knockback = false;
+                _rigidbody.velocity = new Vector2(0.0f,_rigidbody.velocity.y);
+            }
+        }
         
         private void Flip()
         {
-            
-                direction *= -1;
+            direction *= -1;
                 isFacingRight = !isFacingRight;
                 transform.Rotate(0.0f, 180.0f, 0.0f);
             
@@ -132,22 +147,19 @@ namespace Player
                     
                 _isDashing = false;
             }
-            
         }
 
         private void CheckMovementDirection()
         {
             playerAnimator.SetFloat(Speed,Mathf.Abs(direction));
-            if(isFacingRight && direction < 0)
+            if(isFacingRight && direction < 0 && !_knockback)
             {
                 Flip();
             }
-            else if(!isFacingRight && direction > 0)
+            else if(!isFacingRight && direction > 0 && !_knockback)
             {
                 Flip();
             }
-
-           
         }
         
         private void AttemptToDash()
@@ -158,13 +170,6 @@ namespace Player
 
             PlayerAfterImagePool.Instance.SpawnFromPool();
             _lastImageXpos = transform.position.x;
-        }
-
-        public override void ReceiveDamage(int damage)
-        {
-           
-            _rigidbody.velocity = Vector3.zero;
-            _rigidbody.AddForce(transform.up * receiveDamageJump , ForceMode2D.Impulse);
         }
 
         private void Jump()

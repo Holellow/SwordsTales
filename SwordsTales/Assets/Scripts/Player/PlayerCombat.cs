@@ -1,8 +1,9 @@
 ﻿using System;
+using Player;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerCombat : MonoBehaviour,IPointerClickHandler
+public class PlayerCombat : MonoBehaviour, IPointerClickHandler
 { 
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private Transform attackHitBoxPos;
@@ -14,6 +15,7 @@ public class PlayerCombat : MonoBehaviour,IPointerClickHandler
     
     [SerializeField] private bool combatEnabled;
     
+    private PlayerController PC;
     private CircleCollider2D _attackCollider2D;
     private Animator _playerAnimator;
     private Rigidbody2D _rigidbody2D;
@@ -44,6 +46,7 @@ public class PlayerCombat : MonoBehaviour,IPointerClickHandler
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
         _playerAnimator.SetBool(CanAttack, combatEnabled);
+        PC = GetComponent<PlayerController>();
     }
     
     void Update()
@@ -130,7 +133,6 @@ public class PlayerCombat : MonoBehaviour,IPointerClickHandler
     
     private void FinishAttack2()
     {
-        Debug.Log("asdsad");
         _isSecondAttack = false;
         _isAttacking = false;
         _playerAnimator.SetBool(IsAttacking, _isAttacking);
@@ -143,6 +145,23 @@ public class PlayerCombat : MonoBehaviour,IPointerClickHandler
         _playerAnimator.SetBool(IsAttacking, _isAttacking);
         _playerAnimator.SetBool(Attack3, false);
         _isThirdAttack = false;
+    }
+
+    private void Damage(float[] attackDetails)
+    {
+        Debug.Log("Hit");
+        if (PC.GetDashState()) return;
+        int direction;
+        if (attackDetails[1] < transform.position.x)
+        {
+            direction = 1;
+        }
+        else
+        {
+            direction = -1;
+        }
+
+        PC.knockback(direction);
     }
 
     public void OnPointerClick(PointerEventData eventData)
