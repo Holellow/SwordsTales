@@ -7,16 +7,21 @@
     <e p="H:\SwordsTales\SwordsTales" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CameraFollowScript.cs" t="Include" />
-        <e p="sc.cs" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="CheckGround.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="CameraFollowScript.cs" t="Include" />
+          </e>
+          <e p="Checks &amp; Points" t="Include">
+            <e p="CheckGround.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
-            <e p="Enemy.cs" t="Include" />
-            <e p="HellSkull.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+          </e>
+          <e p="ParralaxEffect.cs" t="Include" />
+          <e p="Particles" t="Include">
+            <e p="ParticleController.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="ParralaxEffect.cs" t="Include" />
             <e p="PlayerAfterImagePool.cs" t="Include" />
             <e p="PlayerAfterImageSprite.cs" t="Include" />
             <e p="PlayerCombat.cs" t="Include" />

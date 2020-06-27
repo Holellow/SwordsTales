@@ -1,53 +1,76 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
-using UnityEngine.Timeline;
-using Enemy;
-public class PlayerCombat : MonoBehaviour
-{
-    private Animator _playerAnimator;
+using UnityEngine.EventSystems;
+
+public class PlayerCombat : MonoBehaviour,IPointerClickHandler
+{ 
+    [SerializeField] private LayerMask enemyLayers;
+    [SerializeField] private Transform attackHitBoxPos;
     
-    private static readonly int Attack1 = Animator.StringToHash("Attack");
-
-    private Rigidbody2D _rigidbody2D;
-    public Transform attackPoint;
+    [SerializeField] private float inputTimer;
+    [SerializeField] private float attackRadius;
+    
+    [SerializeField] private int attackDamage;
+    
+    [SerializeField] private bool combatEnabled;
+    
     private CircleCollider2D _attackCollider2D;
-    public float attackRange;
-    public float attackRate = 2f;
-    public float nextAttackTime = 0f;
+    private Animator _playerAnimator;
+    private Rigidbody2D _rigidbody2D;
+    
+    public Transform attackPoint;
 
-    public LayerMask enemyLayers;
-    // Start is called before the first frame update
+    private bool _gotInput;
+    private bool _isFirstAttack;
+    private bool _isSecondAttack;
+    private bool _isThirdAttack;
+    private bool _isAttacking;
+
+    private float _lastInputTime = Mathf.NegativeInfinity;
+    private float[] _attackDetails = new float[2];
+
+    private static readonly int Attack1 = Animator.StringToHash("Attack1");
+    private static readonly int FirstAttack = Animator.StringToHash("FirstAttack");
+    private static readonly int SecondAttack = Animator.StringToHash("SecondAttack");
+    private static readonly int ThirdAttack = Animator.StringToHash("ThirdAttack");
+    private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
+    private static readonly int Attack3 = Animator.StringToHash("Attack3");
+    private static readonly int Attack2 = Animator.StringToHash("Attack2");
+    private static readonly int CanAttack = Animator.StringToHash("canAttack");
+    private static readonly int Attack = Animator.StringToHash("Attack");
+    
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
+        _playerAnimator.SetBool(CanAttack, combatEnabled);
     }
-
-   
+    
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        CheckCombatInput();
+        /*if (Time.time >= nextAttackTime)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Attack();
                 nextAttackTime = Time.time + 1f * attackRate;
             }
-        }
-        
+        }*/
     }
 
-    private void Attack()
+    private void CheckCombatInput()
     {
-        _rigidbody2D.velocity = Vector2.zero;
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        _playerAnimator.SetTrigger(Attack1);
-        foreach (Collider2D enemy in hitEnemies)
+        if (Input.GetMouseButtonDown(0))
         {
-          enemy.GetComponent<Enemy.Enemy>().ReceiveDamage(5);
+            if (combatEnabled)
+            {
+                _gotInput = true;
+                _lastInputTime = Time.time;
+                _playerAnimator.SetTrigger(Attack);
+               // CheckAttacks();
+               
+            }
         }
     }
 
@@ -57,6 +80,74 @@ public class PlayerCombat : MonoBehaviour
         {
             return;
         }
-        Gizmos.DrawWireSphere(attackPoint.position,attackRange); 
+        Gizmos.DrawWireSphere(attackHitBoxPos.position,attackRadius); 
     }
+
+    private void CheckAttacks()
+    {
+        if (_gotInput)
+        {
+            if(!_isAttacking)
+            {
+                Debug.Log("asdasd");
+                _gotInput = false;
+                _isAttacking = true;
+                _isFirstAttack = !_isFirstAttack;
+                _playerAnimator.SetBool(Attack1, true);
+                _playerAnimator.SetBool(FirstAttack, _isFirstAttack);
+            }
+        }
+
+        if (Time.time >= _lastInputTime + inputTimer)
+        {
+            _gotInput = false;
+        }
+    }
+
+    private void CheckAttackHitBox()
+    {
+        var detectedObjects = Physics2D.OverlapCircleAll(attackHitBoxPos.position,attackRadius,enemyLayers);
+
+        _attackDetails[0] = attackDamage;
+        _attackDetails[1] = transform.position.x;
+        foreach (Collider2D collider in detectedObjects)
+        {
+            collider.transform.parent.SendMessage("ReceiveDamage",_attackDetails);
+        }
+        
+    }
+    private void FinishAttack1()
+    {
+        _isFirstAttack = false;
+        _isAttacking = false;
+        _isSecondAttack = true;
+        
+        _playerAnimator.SetBool(IsAttacking, _isAttacking);
+        _playerAnimator.SetBool(Attack1, false);
+        _playerAnimator.SetBool(FirstAttack,_isFirstAttack);
+      
+    }
+    
+    private void FinishAttack2()
+    {
+        Debug.Log("asdsad");
+        _isSecondAttack = false;
+        _isAttacking = false;
+        _playerAnimator.SetBool(IsAttacking, _isAttacking);
+
+    }
+    
+    private void FinishAttack3()
+    {
+        _isAttacking = false;
+        _playerAnimator.SetBool(IsAttacking, _isAttacking);
+        _playerAnimator.SetBool(Attack3, false);
+        _isThirdAttack = false;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
+    }
+    
 }
