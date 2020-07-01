@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraFollowScript : MonoBehaviour
 {
-    
-    
     public Transform player;
-    public float smoothing;
     public Vector3 offset;
+    
+    public float smoothing;
+    
     void FixedUpdate()
     {
         if (player != null)
@@ -17,5 +17,4 @@ public class CameraFollowScript : MonoBehaviour
             transform.position = newPosition;
         }
     }
-
 }

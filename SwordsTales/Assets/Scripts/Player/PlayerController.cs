@@ -1,26 +1,29 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Serialization;
-
+﻿using UnityEngine;
 
 namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private float knockbackDuration;
-        [SerializeField] private float jumpForce = 15.0f;
-        [SerializeField] private float speed = 3.0f;
-        [SerializeField] private float direction;
-
-        [SerializeField] private bool isGrounded;
-        [SerializeField] private bool isFacingRight = true;
-        
         [SerializeField] private Vector2 v2Direction;
         [SerializeField] private Vector2 knockbackSpeed;
         
         [SerializeField] private Animator playerAnimator;
         
         [SerializeField] private GameObject player;
+        
+        [SerializeField] private float jumpGravity;
+        [SerializeField] private float knockbackDuration;
+        [SerializeField] private float jumpForce = 15.0f;
+        [SerializeField] private float speed = 3.0f;
+        [SerializeField] private float direction;
+        [SerializeField] private float jumpPressedTime;
+        [SerializeField] private float jumpRememberer;
+        [SerializeField] private float groundRememberer;
+        [SerializeField] private float groundRemembererTime;
+        [SerializeField] private bool _knockback;
+
+        [SerializeField] private bool isGrounded;
+        [SerializeField] private bool isFacingRight = true;
         
         public Transform groundCheck;
 
@@ -38,12 +41,12 @@ namespace Player
         private float _lastDash;
         private float _movementInputDirection;
         private float _truedirection;
-        private float knockbackStartTime;
+        private float _knockbackStartTime;
         
         private bool _isDashing;
         private bool _isJumping;
-        [SerializeField] private bool _knockback;
-        
+        private bool jumpedOnce = false;
+            
         public float groundCheckRadius;
         public float dashTime;
         public float dashSpeed;
@@ -60,53 +63,36 @@ namespace Player
         private void Start()
         {
             _playerSpriteRenderer = GetComponent<SpriteRenderer>();
-
         }
-
-        public bool GetDashState()
-        {
-            return _isDashing;
-        }
+        
         private void FixedUpdate()
         {
             Grounded();
-            if(Input.GetKeyDown(KeyCode.Space) && isGrounded && !_knockback)
-            {
-                Jump();
-                playerAnimator.SetBool(IsJumping,true);
-            }
         }
         
         private void Update()
         {
-            direction = Input.GetAxisRaw("Horizontal");
+            CheckInput();
             CheckMovementDirection();
             CheckDash();
             CheckKnockback();
-            if (Input.GetButton("Horizontal") && !_knockback ) 
-            {
-                Run();
-            }
-
-            if (Input.GetButtonDown("Dash") && !_knockback)
-            {
-                if (Time.time >= _lastDash + dashCooldown)
-                {
-                    AttemptToDash();
-                }
-            }
         }
-
+        
+        public bool GetDashState()
+        {
+            return _isDashing;
+        }
+        
         public void knockback(int direction)
         {
             _knockback = true;
-            knockbackStartTime = Time.time;
+            _knockbackStartTime = Time.time;
             _rigidbody.velocity = new Vector2(knockbackSpeed.x * direction,knockbackSpeed.y);
         }
 
         private void CheckKnockback()
         {
-            if (Time.time >= knockbackStartTime + knockbackDuration && _knockback)
+            if (Time.time >= _knockbackStartTime + knockbackDuration && _knockback)
             {
                 _knockback = false;
                 _rigidbody.velocity = new Vector2(0.0f,_rigidbody.velocity.y);
@@ -116,17 +102,14 @@ namespace Player
         private void Flip()
         {
             direction *= -1;
-                isFacingRight = !isFacingRight;
-                transform.Rotate(0.0f, 180.0f, 0.0f);
-            
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0.0f, 180.0f, 0.0f);
         }
         
         private void CheckDash()
         {
-            if (!_isDashing)
-            {
-                return;
-            }
+            if (!_isDashing) return;
+            
 
             if (_dashTimeLeft > 0)
             {
@@ -183,8 +166,61 @@ namespace Player
             _isJumping = !isGrounded;
             playerAnimator.SetBool(IsJumping,_isJumping);
            isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, groundCheckRadius,whatIsGround);
+           if (isGrounded)
+           {
+               groundRememberer = groundRemembererTime;
+               jumpedOnce = false;
+           }
+           else
+           {
+               groundRememberer -= Time.deltaTime;
+           }
+           
         }
 
+        private void CheckInput()
+        {
+            direction = Input.GetAxisRaw("Horizontal");
+            //Jump block ----------------------------------------------------------------
+            jumpRememberer -= Time.deltaTime;
+            if (Input.GetKeyUp(KeyCode.Space) )
+            {
+                if (_rigidbody.velocity.y > 0)
+                {
+                    _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * jumpGravity);
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space)&& isGrounded)
+            {
+                jumpRememberer = jumpPressedTime;
+            }
+
+            if (jumpRememberer > 0 && !_knockback && groundRememberer > 0 && !jumpedOnce)
+            {
+                jumpedOnce = true;
+                jumpRememberer = 0;
+                groundRememberer = 0;
+            
+                Jump();
+                playerAnimator.SetBool(IsJumping, true);
+                
+            }
+            //-----------------------------------------------------------------------  
+            if (Input.GetButton("Horizontal") && !_knockback ) 
+            {
+                Run();
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !_knockback)
+            {
+                if (Time.time >= _lastDash + dashCooldown)
+                {
+                    AttemptToDash();
+                }
+            }
+        }
+        
         private void Run()
         {
             v2Direction.x = direction;

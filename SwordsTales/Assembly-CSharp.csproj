@@ -58,15 +58,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollowScript.cs" />
      <Compile Include="Assets\Scripts\Checks &amp; Points\CheckGround.cs" />
+     <Compile Include="Assets\Scripts\Dialogue System\DialogueHolder.cs" />
+     <Compile Include="Assets\Scripts\Dialogue System\DialogueLine.cs" />
+     <Compile Include="Assets\Scripts\Dialogue System\DialogueSystemClass.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\ParralaxEffect.cs" />
      <Compile Include="Assets\Scripts\Particles\ParticleController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAfterImagePool.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAfterImageSprite.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\QuestButton.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\QuestEvent.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\QuestLocation.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\QuestPath.cs" />
+     <Compile Include="Assets\Scripts\Snare.cs" />
+     <Compile Include="Assets\Scripts\Sound\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Timelines\Timeline.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <None Include="Assets\Sprites\Monsters\Gothicvania\public-license.txt" />
  <Reference Include="Unity.Timeline.Editor">

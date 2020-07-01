@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2112981145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112981146}
+  m_Layer: 10
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2112981146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112981145}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.26, y: -0.28, z: 0}
+  m_LocalScale: {x: 1, y: 0.9940357, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982981294659531364}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982981294659531371
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,9 +44,11 @@ GameObject:
   - component: {fileID: 982981294659531365}
   - component: {fileID: 982981294659531366}
   - component: {fileID: 982981294659531362}
-  m_Layer: 0
+  - component: {fileID: 448081607}
+  - component: {fileID: 448081613}
+  m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,10 +61,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982981294659531371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37651694, y: 1.292, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.006, z: 1}
   m_Children:
   - {fileID: 982981295794536767}
+  - {fileID: 2112981146}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,7 +82,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: -0.66}
+  m_Offset: {x: -0.01, y: -0.21}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -60,7 +93,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.03, y: 1}
+  m_Size: {x: 1.03, y: 1.83}
   m_EdgeRadius: 0
 --- !u!212 &982981294659531368
 SpriteRenderer:
@@ -76,6 +109,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -143,16 +177,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7267a249ee52aa24e80c5acbdae89d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  v2Direction: {x: 0, y: 0}
+  knockbackSpeed: {x: 10, y: 5}
   playerAnimator: {fileID: 982981294659531365}
-  vector3direction: {x: 0, y: 0, z: 0}
-  direction: {x: 0, y: 0}
-  isGrounded: 1
-  groundCheck: {fileID: 982981295794536767}
-  speed: 3
-  lives: 5
-  extraJumps: 0
+  player: {fileID: 982981294659531371}
+  jumpGravity: 0.3
+  knockbackDuration: 0.1
   jumpForce: 10
-  extraJumpsValue: 1
+  speed: 6
+  direction: 0
+  jumpPressedTime: 0.2
+  jumpRememberer: 0
+  groundRememberer: 0
+  groundRemembererTime: 0.6
+  _knockback: 0
+  isGrounded: 1
+  isFacingRight: 1
+  groundCheck: {fileID: 982981295794536767}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  groundCheckRadius: 0.6
+  dashTime: 0.15
+  dashSpeed: 50
+  distanceBetweenImages: 0.1
+  dashCooldown: 1
 --- !u!50 &982981294659531362
 Rigidbody2D:
   serializedVersion: 4
@@ -174,6 +223,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &448081607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982981294659531371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32d1ff6c59c47946a07db5f873898df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  attackHitBoxPos: {fileID: 2112981146}
+  inputTimer: 1
+  attackRadius: 0.8
+  attackDamage: 10
+  combatEnabled: 1
+  attackPoint: {fileID: 2112981146}
+--- !u!114 &448081613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982981294659531371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53dc63b62388b44b90497b0aa020096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticles: {fileID: 0}
+  playerAnimator: {fileID: 0}
+  healthBar: {fileID: 0}
+  maxHealth: 5
+  currentHealth: 0
 --- !u!1 &982981295794536766
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,10 +270,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982981295794536767}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CheckGround
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

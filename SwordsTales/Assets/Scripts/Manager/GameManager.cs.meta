@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 68de83a1a8cc29c4995446cf14aeaf06
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - respawnPoint: {instanceID: 0}
+  - player: {fileID: 982981294659531371, guid: df72414a607a15748bb5081c41983953, type: 3}
+  - playerCamera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,4 @@
-﻿using System;
-using Packages.Rider.Editor.Util;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour

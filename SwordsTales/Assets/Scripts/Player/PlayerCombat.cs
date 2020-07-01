@@ -1,5 +1,4 @@
-﻿using System;
-using Player;
+﻿using Player;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -19,6 +18,7 @@ public class PlayerCombat : MonoBehaviour, IPointerClickHandler
     private CircleCollider2D _attackCollider2D;
     private Animator _playerAnimator;
     private Rigidbody2D _rigidbody2D;
+    private PlayerStats _playerStats;
     
     public Transform attackPoint;
 
@@ -47,6 +47,7 @@ public class PlayerCombat : MonoBehaviour, IPointerClickHandler
         _playerAnimator = GetComponent<Animator>();
         _playerAnimator.SetBool(CanAttack, combatEnabled);
         PC = GetComponent<PlayerController>();
+        _playerStats = GetComponent<PlayerStats>();
     }
     
     void Update()
@@ -149,9 +150,10 @@ public class PlayerCombat : MonoBehaviour, IPointerClickHandler
 
     private void Damage(float[] attackDetails)
     {
-        Debug.Log("Hit");
         if (PC.GetDashState()) return;
         int direction;
+        
+        _playerStats.DecreaseHealth(attackDetails[0]);
         if (attackDetails[1] < transform.position.x)
         {
             direction = 1;
