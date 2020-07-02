@@ -58,13 +58,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demon.cs" />
+     <Compile Include="Assets\FinalDialogue.cs" />
      <Compile Include="Assets\HealthBar.cs" />
+     <Compile Include="Assets\LevelLoaderScript.cs" />
+     <Compile Include="Assets\LevelStart.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollowScript.cs" />
      <Compile Include="Assets\Scripts\Checks &amp; Points\CheckGround.cs" />
      <Compile Include="Assets\Scripts\Dialogue System\DialogueHolder.cs" />
      <Compile Include="Assets\Scripts\Dialogue System\DialogueLine.cs" />
      <Compile Include="Assets\Scripts\Dialogue System\DialogueSystemClass.cs" />
+     <Compile Include="Assets\Scripts\Dialogue System\NPC.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\Manager\FinalState.cs" />
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\ParralaxEffect.cs" />
      <Compile Include="Assets\Scripts\Particles\ParticleController.cs" />
@@ -84,6 +92,7 @@
      <Compile Include="Assets\Scripts\Timelines\Timeline.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <None Include="Assets\Sprites\Monsters\Gothicvania\public-license.txt" />
+     <None Include="Assets\Sprites\Characters (Not main)\Hero Knight 2\License.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>H:/SwordsTales/SwordsTales/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -1,0 +1,2048 @@
+fileFormatVersion: 2
+guid: 02b701f789548da4eb1ac8bd04fc3e89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6605399785169992778
+    second: Menu Buttons sprite (BnW)_0
+  - first:
+      213: -6590745277454641608
+    second: Menu Buttons sprite (BnW)_1
+  - first:
+      213: 626070722081851790
+    second: Menu Buttons sprite (BnW)_2
+  - first:
+      213: -7400745310067718989
+    second: Menu Buttons sprite (BnW)_3
+  - first:
+      213: -2405842280117393066
+    second: Menu Buttons sprite (BnW)_4
+  - first:
+      213: -6827619388968304841
+    second: Menu Buttons sprite (BnW)_5
+  - first:
+      213: -1780571671099364792
+    second: Menu Buttons sprite (BnW)_6
+  - first:
+      213: 4902860978009340434
+    second: Menu Buttons sprite (BnW)_7
+  - first:
+      213: 7798664930083345572
+    second: Menu Buttons sprite (BnW)_8
+  - first:
+      213: 1721249783069647981
+    second: Menu Buttons sprite (BnW)_9
+  - first:
+      213: 1410391903817647788
+    second: Menu Buttons sprite (BnW)_10
+  - first:
+      213: -650886592192641895
+    second: Menu Buttons sprite (BnW)_11
+  - first:
+      213: 3889632725029467092
+    second: Menu Buttons sprite (BnW)_12
+  - first:
+      213: -2417640550058413672
+    second: Menu Buttons sprite (BnW)_13
+  - first:
+      213: 8209608196647051113
+    second: Menu Buttons sprite (BnW)_14
+  - first:
+      213: -7393627055462713908
+    second: Menu Buttons sprite (BnW)_15
+  - first:
+      213: -7950851768424210683
+    second: Menu Buttons sprite (BnW)_16
+  - first:
+      213: -2015987400146692217
+    second: Menu Buttons sprite (BnW)_17
+  - first:
+      213: 2461196404440779919
+    second: Menu Buttons sprite (BnW)_18
+  - first:
+      213: 2088770946028252184
+    second: Menu Buttons sprite (BnW)_19
+  - first:
+      213: 1286967997032707097
+    second: Menu Buttons sprite (BnW)_20
+  - first:
+      213: 1129694780807903648
+    second: Menu Buttons sprite (BnW)_21
+  - first:
+      213: -3263181131123679763
+    second: Menu Buttons sprite (BnW)_22
+  - first:
+      213: 5168338983920594523
+    second: Menu Buttons sprite (BnW)_23
+  - first:
+      213: -6234835024823999411
+    second: Menu Buttons sprite (BnW)_24
+  - first:
+      213: -299499951468511231
+    second: Menu Buttons sprite (BnW)_25
+  - first:
+      213: -9158224191459809893
+    second: Menu Buttons sprite (BnW)_26
+  - first:
+      213: 4159256260971155371
+    second: Menu Buttons sprite (BnW)_27
+  - first:
+      213: -7926048299761647931
+    second: Menu Buttons sprite (BnW)_28
+  - first:
+      213: 3313612864428702952
+    second: Menu Buttons sprite (BnW)_29
+  - first:
+      213: 239405166044477513
+    second: Menu Buttons sprite (BnW)_30
+  - first:
+      213: 8181164134278386564
+    second: Menu Buttons sprite (BnW)_31
+  - first:
+      213: 1985641975468804510
+    second: Menu Buttons sprite (BnW)_32
+  - first:
+      213: 2278371539524227505
+    second: Menu Buttons sprite (BnW)_33
+  - first:
+      213: 7099277081922599573
+    second: Menu Buttons sprite (BnW)_34
+  - first:
+      213: -7560246767535519783
+    second: Menu Buttons sprite (BnW)_35
+  - first:
+      213: -5093178227343334593
+    second: Menu Buttons sprite (BnW)_36
+  - first:
+      213: -3504225058298004648
+    second: Menu Buttons sprite (BnW)_37
+  - first:
+      213: 7365160060587408218
+    second: Menu Buttons sprite (BnW)_38
+  - first:
+      213: -2237742865012771185
+    second: Menu Buttons sprite (BnW)_39
+  - first:
+      213: 7935093503682444019
+    second: Menu Buttons sprite (BnW)_40
+  - first:
+      213: 5534643535429601775
+    second: Menu Buttons sprite (BnW)_41
+  - first:
+      213: 1073078180161204588
+    second: Menu Buttons sprite (BnW)_42
+  - first:
+      213: 5625423253208119681
+    second: Menu Buttons sprite (BnW)_43
+  - first:
+      213: 1999393554598168850
+    second: Menu Buttons sprite (BnW)_44
+  - first:
+      213: -4840980272095871444
+    second: Menu Buttons sprite (BnW)_45
+  - first:
+      213: 4171978754147824196
+    second: Menu Buttons sprite (BnW)_46
+  - first:
+      213: 6363899543944405896
+    second: Menu Buttons sprite (BnW)_47
+  - first:
+      213: 723520190720249786
+    second: Menu Buttons sprite (BnW)_48
+  - first:
+      213: 2474224344419490782
+    second: Menu Buttons sprite (BnW)_49
+  - first:
+      213: -3809800314969756634
+    second: Menu Buttons sprite (BnW)_50
+  - first:
+      213: 5650722701376035496
+    second: Menu Buttons sprite (BnW)_51
+  - first:
+      213: -6921621701754579876
+    second: Menu Buttons sprite (BnW)_52
+  - first:
+      213: -8525088786411930806
+    second: Menu Buttons sprite (BnW)_53
+  - first:
+      213: -2649575523922599473
+    second: Menu Buttons sprite (BnW)_54
+  - first:
+      213: 7744720922384846322
+    second: Menu Buttons sprite (BnW)_55
+  - first:
+      213: -4428622222106736885
+    second: Menu Buttons sprite (BnW)_56
+  - first:
+      213: -1131955635721096911
+    second: Menu Buttons sprite (BnW)_57
+  - first:
+      213: 4395299274445678641
+    second: Menu Buttons sprite (BnW)_58
+  - first:
+      213: 4098781165579596176
+    second: Menu Buttons sprite (BnW)_59
+  - first:
+      213: -5763189049419631735
+    second: Menu Buttons sprite (BnW)_60
+  - first:
+      213: 5223770817601888638
+    second: Menu Buttons sprite (BnW)_61
+  - first:
+      213: 597281192454672569
+    second: Menu Buttons sprite (BnW)_62
+  - first:
+      213: -1714855968661328430
+    second: Menu Buttons sprite (BnW)_63
+  - first:
+      213: 1912929479574235328
+    second: Menu Buttons sprite (BnW)_64
+  - first:
+      213: 6366799910387926850
+    second: Menu Buttons sprite (BnW)_65
+  - first:
+      213: 2668150851312851575
+    second: Menu Buttons sprite (BnW)_66
+  - first:
+      213: -8087579895995698253
+    second: Menu Buttons sprite (BnW)_67
+  - first:
+      213: 3023510275029941138
+    second: Menu Buttons sprite (BnW)_68
+  - first:
+      213: -6486030384318524195
+    second: Menu Buttons sprite (BnW)_69
+  - first:
+      213: 7365144377234349574
+    second: Menu Buttons sprite (BnW)_70
+  - first:
+      213: 3525722274308894486
+    second: Menu Buttons sprite (BnW)_71
+  - first:
+      213: -5061813986999823693
+    second: Menu Buttons sprite (BnW)_72
+  - first:
+      213: -1866262333530790634
+    second: Menu Buttons sprite (BnW)_73
+  - first:
+      213: 6791025521696996099
+    second: Menu Buttons sprite (BnW)_74
+  - first:
+      213: -5270533618677049069
+    second: Menu Buttons sprite (BnW)_75
+  - first:
+      213: -1695512020978120635
+    second: Menu Buttons sprite (BnW)_76
+  - first:
+      213: 4639525013948975482
+    second: Menu Buttons sprite (BnW)_77
+  - first:
+      213: 103963510333685330
+    second: Menu Buttons sprite (BnW)_78
+  - first:
+      213: -851466507090851393
+    second: Menu Buttons sprite (BnW)_79
+  - first:
+      213: 4350782387787226629
+    second: Menu Buttons sprite (BnW)_80
+  - first:
+      213: -3523656155725957047
+    second: Menu Buttons sprite (BnW)_81
+  - first:
+      213: 4537711277339856240
+    second: Menu Buttons sprite (BnW)_82
+  - first:
+      213: 4910783970611240035
+    second: Menu Buttons sprite (BnW)_83
+  - first:
+      213: 1561332799325762244
+    second: Menu Buttons sprite (BnW)_84
+  - first:
+      213: -5834822174365608382
+    second: Menu Buttons sprite (BnW)_85
+  - first:
+      213: -3753530101331842340
+    second: Menu Buttons sprite (BnW)_86
+  - first:
+      213: 4305148543497013260
+    second: Menu Buttons sprite (BnW)_87
+  - first:
+      213: -2482942309098520772
+    second: Menu Buttons sprite (BnW)_88
+  - first:
+      213: 7620936565398175938
+    second: Menu Buttons sprite (BnW)_89
+  - first:
+      213: 6232030584165539457
+    second: Menu Buttons sprite (BnW)_90
+  - first:
+      213: -3599488074476412492
+    second: Menu Buttons sprite (BnW)_91
+  - first:
+      213: 8730822366554832414
+    second: Menu Buttons sprite (BnW)_92
+  - first:
+      213: -4044106150402991590
+    second: Menu Buttons sprite (BnW)_93
+  - first:
+      213: 6006487737043730044
+    second: Menu Buttons sprite (BnW)_94
+  - first:
+      213: 7210034818629327214
+    second: Menu Buttons sprite (BnW)_95
+  - first:
+      213: 1683301131001989293
+    second: Menu Buttons sprite (BnW)_96
+  - first:
+      213: 8264033038699707669
+    second: Menu Buttons sprite (BnW)_97
+  - first:
+      213: -6219642934093081234
+    second: Menu Buttons sprite (BnW)_98
+  - first:
+      213: -5956939658318728810
+    second: Menu Buttons sprite (BnW)_99
+  - first:
+      213: -4403537557919505481
+    second: Menu Buttons sprite (BnW)_100
+  - first:
+      213: 3049305769528071393
+    second: Menu Buttons sprite (BnW)_101
+  - first:
+      213: -8206890404085198834
+    second: Menu Buttons sprite (BnW)_102
+  - first:
+      213: 5271759784348098266
+    second: Menu Buttons sprite (BnW)_103
+  - first:
+      213: -3377008834162588503
+    second: Menu Buttons sprite (BnW)_104
+  - first:
+      213: -5333598971808180313
+    second: Menu Buttons sprite (BnW)_105
+  - first:
+      213: -5674704895403266808
+    second: Menu Buttons sprite (BnW)_106
+  - first:
+      213: -2733274193201844040
+    second: Menu Buttons sprite (BnW)_107
+  - first:
+      213: -2636243129559313608
+    second: Menu Buttons sprite (BnW)_108
+  - first:
+      213: 7328299958563837726
+    second: Menu Buttons sprite (BnW)_109
+  - first:
+      213: -793824150124074461
+    second: Menu Buttons sprite (BnW)_110
+  - first:
+      213: -5428898664420297777
+    second: Menu Buttons sprite (BnW)_111
+  - first:
+      213: -8818503603691185648
+    second: Menu Buttons sprite (BnW)_112
+  - first:
+      213: -1200052233328158009
+    second: Menu Buttons sprite (BnW)_113
+  - first:
+      213: 6976037992813025031
+    second: Menu Buttons sprite (BnW)_114
+  - first:
+      213: -4572190087339460090
+    second: Menu Buttons sprite (BnW)_115
+  - first:
+      213: 6246757925754830402
+    second: Menu Buttons sprite (BnW)_116
+  - first:
+      213: -4093942574443565830
+    second: Menu Buttons sprite (BnW)_117
+  - first:
+      213: 8875363455173049212
+    second: Menu Buttons sprite (BnW)_118
+  - first:
+      213: 286977589589372627
+    second: Menu Buttons sprite (BnW)_119
+  - first:
+      213: -759067964613858875
+    second: Menu Buttons sprite (BnW)_120
+  - first:
+      213: 6738570200314007736
+    second: Menu Buttons sprite (BnW)_121
+  - first:
+      213: -5597406165865548473
+    second: Menu Buttons sprite (BnW)_122
+  - first:
+      213: 4950160845149822921
+    second: Menu Buttons sprite (BnW)_123
+  - first:
+      213: -8531574711002199572
+    second: Menu Buttons sprite (BnW)_124
+  - first:
+      213: -1275576410572132940
+    second: Menu Buttons sprite (BnW)_125
+  - first:
+      213: 239886742497891372
+    second: Menu Buttons sprite (BnW)_126
+  - first:
+      213: -6817902028145683715
+    second: Menu Buttons sprite (BnW)_127
+  - first:
+      213: -1386581723977393602
+    second: Menu Buttons sprite (BnW)_128
+  - first:
+      213: -2015460000291224198
+    second: Menu Buttons sprite (BnW)_129
+  - first:
+      213: 702108283056448570
+    second: Menu Buttons sprite (BnW)_130
+  - first:
+      213: 1481832619513089554
+    second: Menu Buttons sprite (BnW)_131
+  - first:
+      213: 3189010682398294610
+    second: Menu Buttons sprite (BnW)_132
+  - first:
+      213: 5525940865235736298
+    second: Menu Buttons sprite (BnW)_133
+  - first:
+      213: -2943284189552877350
+    second: Menu Buttons sprite (BnW)_134
+  - first:
+      213: -2740684683146866093
+    second: Menu Buttons sprite (BnW)_135
+  - first:
+      213: -745694557159967563
+    second: Menu Buttons sprite (BnW)_136
+  - first:
+      213: -4124372246311020854
+    second: Menu Buttons sprite (BnW)_137
+  - first:
+      213: 1596097673341373084
+    second: Menu Buttons sprite (BnW)_138
+  - first:
+      213: 9115955871828790471
+    second: Menu Buttons sprite (BnW)_139
+  - first:
+      213: -6487927451434855715
+    second: Menu Buttons sprite (BnW)_140
+  - first:
+      213: -686604302848787461
+    second: Menu Buttons sprite (BnW)_141
+  - first:
+      213: -106508130078935270
+    second: Menu Buttons sprite (BnW)_142
+  - first:
+      213: -8175270046645422382
+    second: Menu Buttons sprite (BnW)_143
+  - first:
+      213: 5579735750100532039
+    second: Menu Buttons sprite (BnW)_144
+  - first:
+      213: -4767360967972542072
+    second: Menu Buttons sprite (BnW)_145
+  - first:
+      213: -6766018458125541838
+    second: Menu Buttons sprite (BnW)_146
+  - first:
+      213: -6274992535423840604
+    second: Menu Buttons sprite (BnW)_147
+  - first:
+      213: 5027022822611502729
+    second: Menu Buttons sprite (BnW)_148
+  - first:
+      213: -8426744598071362975
+    second: Menu Buttons sprite (BnW)_149
+  - first:
+      213: 407399167395197464
+    second: Menu Buttons sprite (BnW)_150
+  - first:
+      213: 6399705054096299396
+    second: Menu Buttons sprite (BnW)_151
+  - first:
+      213: -5214430091894606746
+    second: Menu Buttons sprite (BnW)_152
+  - first:
+      213: 4549521774174964605
+    second: Menu Buttons sprite (BnW)_153
+  - first:
+      213: -5428094101005418893
+    second: Menu Buttons sprite (BnW)_154
+  - first:
+      213: -2206454267530179328
+    second: Menu Buttons sprite (BnW)_155
+  - first:
+      213: -3064967106838434959
+    second: Menu Buttons sprite (BnW)_156
+  - first:
+      213: 5481440746051658516
+    second: Menu Buttons sprite (BnW)_157
+  - first:
+      213: -6171474406576559951
+    second: Menu Buttons sprite (BnW)_158
+  - first:
+      213: 1280660032419185891
+    second: Menu Buttons sprite (BnW)_159
+  - first:
+      213: 5907873084940004967
+    second: Menu Buttons sprite (BnW)_160
+  - first:
+      213: -5430783757016549538
+    second: Menu Buttons sprite (BnW)_161
+  - first:
+      213: 8914351092825264394
+    second: Menu Buttons sprite (BnW)_162
+  - first:
+      213: -346904655405735447
+    second: Menu Buttons sprite (BnW)_163
+  - first:
+      213: 4015152121286593636
+    second: Menu Buttons sprite (BnW)_164
+  - first:
+      213: -4940280232149940769
+    second: Menu Buttons sprite (BnW)_165
+  - first:
+      213: -3209838721194566336
+    second: Menu Buttons sprite (BnW)_166
+  - first:
+      213: 5645356903562579118
+    second: Menu Buttons sprite (BnW)_167
+  - first:
+      213: -400732167032234836
+    second: Menu Buttons sprite (BnW)_168
+  - first:
+      213: -7429586690163279587
+    second: Menu Buttons sprite (BnW)_169
+  - first:
+      213: 4187550782815879744
+    second: Menu Buttons sprite (BnW)_170
+  - first:
+      213: 5094491062298027789
+    second: Menu Buttons sprite (BnW)_171
+  - first:
+      213: -7405952477247510870
+    second: Menu Buttons sprite (BnW)_172
+  - first:
+      213: 3814907775054873694
+    second: Menu Buttons sprite (BnW)_173
+  - first:
+      213: -8883714003586827702
+    second: Menu Buttons sprite (BnW)_174
+  - first:
+      213: 2906528853042734954
+    second: Menu Buttons sprite (BnW)_175
+  - first:
+      213: 4186725393942200660
+    second: Menu Buttons sprite (BnW)_176
+  - first:
+      213: 3777294564749370571
+    second: Menu Buttons sprite (BnW)_177
+  - first:
+      213: -6184386387922541505
+    second: Menu Buttons sprite (BnW)_178
+  - first:
+      213: -8117693059811023183
+    second: Menu Buttons sprite (BnW)_179
+  - first:
+      213: 4467128505017570354
+    second: Menu Buttons sprite (BnW)_180
+  - first:
+      213: 802688709623459269
+    second: Menu Buttons sprite (BnW)_181
+  - first:
+      213: 124542869843343300
+    second: Menu Buttons sprite (BnW)_182
+  - first:
+      213: 5271216082417491084
+    second: Menu Buttons sprite (BnW)_183
+  - first:
+      213: 2233824626262456085
+    second: Menu Buttons sprite (BnW)_184
+  - first:
+      213: 496771780539597114
+    second: Menu Buttons sprite (BnW)_185
+  - first:
+      213: 6603765499541532848
+    second: Menu Buttons sprite (BnW)_186
+  - first:
+      213: -7267244469820157978
+    second: Menu Buttons sprite (BnW)_187
+  - first:
+      213: 2678507109829761953
+    second: Menu Buttons sprite (BnW)_188
+  - first:
+      213: -5473178794510842136
+    second: Menu Buttons sprite (BnW)_189
+  - first:
+      213: -2304827420044919217
+    second: Menu Buttons sprite (BnW)_190
+  - first:
+      213: 1814405419611275722
+    second: Menu Buttons sprite (BnW)_191
+  - first:
+      213: -5244437726109790816
+    second: Menu Buttons sprite (BnW)_192
+  - first:
+      213: 2468762764636933807
+    second: Menu Buttons sprite (BnW)_193
+  - first:
+      213: 2920248455662076436
+    second: Menu Buttons sprite (BnW)_194
+  - first:
+      213: -5767854627426577865
+    second: Menu Buttons sprite (BnW)_195
+  - first:
+      213: -6858407441901714032
+    second: Menu Buttons sprite (BnW)_196
+  - first:
+      213: -2387869987290214921
+    second: Menu Buttons sprite (BnW)_197
+  - first:
+      213: 2945769197206999860
+    second: Menu Buttons sprite (BnW)_198
+  - first:
+      213: -9000072103653352497
+    second: Menu Buttons sprite (BnW)_199
+  - first:
+      213: 2033322134248007275
+    second: Menu Buttons sprite (BnW)_200
+  - first:
+      213: -2265177853612977037
+    second: Menu Buttons sprite (BnW)_201
+  - first:
+      213: -2386740311202926120
+    second: Menu Buttons sprite (BnW)_202
+  - first:
+      213: 2355477716467118617
+    second: Menu Buttons sprite (BnW)_203
+  - first:
+      213: -7141126344091049224
+    second: Menu Buttons sprite (BnW)_204
+  - first:
+      213: -1421444298759229593
+    second: Menu Buttons sprite (BnW)_205
+  - first:
+      213: 797983636527742595
+    second: Menu Buttons sprite (BnW)_206
+  - first:
+      213: 7291104271243331582
+    second: Menu Buttons sprite (BnW)_207
+  - first:
+      213: 8381420783233512099
+    second: Menu Buttons sprite (BnW)_208
+  - first:
+      213: 8881605030461694599
+    second: Menu Buttons sprite (BnW)_209
+  - first:
+      213: -3264769756849862807
+    second: Menu Buttons sprite (BnW)_210
+  - first:
+      213: 6305287981070754735
+    second: Menu Buttons sprite (BnW)_211
+  - first:
+      213: -3021841208532086348
+    second: Menu Buttons sprite (BnW)_212
+  - first:
+      213: -1546883385490842217
+    second: Menu Buttons sprite (BnW)_213
+  - first:
+      213: -5336492419735232946
+    second: Menu Buttons sprite (BnW)_214
+  - first:
+      213: 2410771106049948825
+    second: Menu Buttons sprite (BnW)_215
+  - first:
+      213: 3178163092171271641
+    second: Menu Buttons sprite (BnW)_216
+  - first:
+      213: 1044184470434140475
+    second: Menu Buttons sprite (BnW)_217
+  - first:
+      213: 5162899530919421774
+    second: Menu Buttons sprite (BnW)_218
+  - first:
+      213: -6956692636848468771
+    second: Menu Buttons sprite (BnW)_219
+  - first:
+      213: -8596977624672341401
+    second: Menu Buttons sprite (BnW)_220
+  - first:
+      213: -4575948073899901229
+    second: Menu Buttons sprite (BnW)_221
+  - first:
+      213: -6127268332534650719
+    second: Menu Buttons sprite (BnW)_222
+  - first:
+      213: 6441659571551460455
+    second: Menu Buttons sprite (BnW)_223
+  - first:
+      213: 3245748479331364216
+    second: Menu Buttons sprite (BnW)_224
+  - first:
+      213: 9136276485683431307
+    second: Menu Buttons sprite (BnW)_225
+  - first:
+      213: 6223507899629723820
+    second: Menu Buttons sprite (BnW)_226
+  - first:
+      213: 3472732383176565988
+    second: Menu Buttons sprite (BnW)_227
+  - first:
+      213: 4784475159195146632
+    second: Menu Buttons sprite (BnW)_228
+  - first:
+      213: -6703797788519421639
+    second: Menu Buttons sprite (BnW)_229
+  - first:
+      213: 6899821541665373749
+    second: Menu Buttons sprite (BnW)_230
+  - first:
+      213: -4830752647016479006
+    second: Menu Buttons sprite (BnW)_231
+  - first:
+      213: -160283458619258853
+    second: Menu Buttons sprite (BnW)_232
+  - first:
+      213: -2831840398808469678
+    second: Menu Buttons sprite (BnW)_233
+  - first:
+      213: 5578512661962302991
+    second: Menu Buttons sprite (BnW)_234
+  - first:
+      213: 2195774274257624576
+    second: Menu Buttons sprite (BnW)_235
+  - first:
+      213: -3233013711706221767
+    second: Menu Buttons sprite (BnW)_236
+  - first:
+      213: 1168407335159866950
+    second: Menu Buttons sprite (BnW)_237
+  - first:
+      213: 3558165517578203717
+    second: Menu Buttons sprite (BnW)_238
+  - first:
+      213: -1146392385811654961
+    second: Menu Buttons sprite (BnW)_239
+  - first:
+      213: 3399624613782838254
+    second: Menu Buttons sprite (BnW)_240
+  - first:
+      213: -2144885492642533287
+    second: Menu Buttons sprite (BnW)_241
+  - first:
+      213: -8378236363803696887
+    second: Menu Buttons sprite (BnW)_242
+  - first:
+      213: -7560336862562402532
+    second: Menu Buttons sprite (BnW)_243
+  - first:
+      213: -3627198439691292774
+    second: Menu Buttons sprite (BnW)_244
+  - first:
+      213: 7936857813869699475
+    second: Menu Buttons sprite (BnW)_245
+  - first:
+      213: 4452479287499112134
+    second: Menu Buttons sprite (BnW)_246
+  - first:
+      213: -5954542398346584750
+    second: Menu Buttons sprite (BnW)_247
+  - first:
+      213: -8370463340656599430
+    second: Menu Buttons sprite (BnW)_248
+  - first:
+      213: 8784102339468172777
+    second: Menu Buttons sprite (BnW)_249
+  - first:
+      213: -5444670414360486687
+    second: Menu Buttons sprite (BnW)_250
+  - first:
+      213: 716651606242709720
+    second: Menu Buttons sprite (BnW)_251
+  - first:
+      213: -4427520714086411245
+    second: Menu Buttons sprite (BnW)_252
+  - first:
+      213: -7407949711587899728
+    second: Menu Buttons sprite (BnW)_253
+  - first:
+      213: 4021684016572665625
+    second: Menu Buttons sprite (BnW)_254
+  - first:
+      213: -5867465479142554116
+    second: Menu Buttons sprite (BnW)_255
+  - first:
+      213: 5508633469260520043
+    second: Menu Buttons sprite (BnW)_256
+  - first:
+      213: 1103165238138340740
+    second: Menu Buttons sprite (BnW)_257
+  - first:
+      213: 9081307547670957010
+    second: Menu Buttons sprite (BnW)_258
+  - first:
+      213: -2414294186176610737
+    second: Menu Buttons sprite (BnW)_259
+  - first:
+      213: -2478493914809977323
+    second: Menu Buttons sprite (BnW)_260
+  - first:
+      213: 2295111191477368126
+    second: Menu Buttons sprite (BnW)_261
+  - first:
+      213: 2877351063405348689
+    second: Menu Buttons sprite (BnW)_262
+  - first:
+      213: -5318338083159263017
+    second: Menu Buttons sprite (BnW)_263
+  - first:
+      213: -3998571729954800451
+    second: Menu Buttons sprite (BnW)_264
+  - first:
+      213: 2948388772169206214
+    second: Menu Buttons sprite (BnW)_265
+  - first:
+      213: -204128455188060102
+    second: Menu Buttons sprite (BnW)_266
+  - first:
+      213: -6565236655377957895
+    second: Menu Buttons sprite (BnW)_267
+  - first:
+      213: 4193696308166001085
+    second: Menu Buttons sprite (BnW)_268
+  - first:
+      213: 4562281623566530840
+    second: Menu Buttons sprite (BnW)_269
+  - first:
+      213: 2196795000186021436
+    second: Menu Buttons sprite (BnW)_270
+  - first:
+      213: 3255569886192214864
+    second: Menu Buttons sprite (BnW)_271
+  - first:
+      213: -7853055968695428326
+    second: Menu Buttons sprite (BnW)_272
+  - first:
+      213: -1487676863374594907
+    second: Menu Buttons sprite (BnW)_273
+  - first:
+      213: -2291511283858930645
+    second: Menu Buttons sprite (BnW)_274
+  - first:
+      213: -548991180208017716
+    second: Menu Buttons sprite (BnW)_275
+  - first:
+      213: 2802225920573928983
+    second: Menu Buttons sprite (BnW)_276
+  - first:
+      213: 8563139353566531825
+    second: Menu Buttons sprite (BnW)_277
+  - first:
+      213: 5316446751861250415
+    second: Menu Buttons sprite (BnW)_278
+  - first:
+      213: -8264418734369824013
+    second: Menu Buttons sprite (BnW)_279
+  - first:
+      213: 8288793093082435910
+    second: Menu Buttons sprite (BnW)_280
+  - first:
+      213: -3927280335439034963
+    second: Menu Buttons sprite (BnW)_281
+  - first:
+      213: -1162636890624564940
+    second: Menu Buttons sprite (BnW)_282
+  - first:
+      213: 7773011739689057491
+    second: Menu Buttons sprite (BnW)_283
+  - first:
+      213: 2422799009701306651
+    second: Menu Buttons sprite (BnW)_284
+  - first:
+      213: 3774904813580653466
+    second: Menu Buttons sprite (BnW)_285
+  - first:
+      213: 1155204072078429485
+    second: Menu Buttons sprite (BnW)_286
+  - first:
+      213: 6775200198322753989
+    second: Menu Buttons sprite (BnW)_287
+  - first:
+      213: 4720072176455433605
+    second: Menu Buttons sprite (BnW)_288
+  - first:
+      213: -8057854767765239657
+    second: Menu Buttons sprite (BnW)_289
+  - first:
+      213: -1674171065886181775
+    second: Menu Buttons sprite (BnW)_290
+  - first:
+      213: -1037574361793780472
+    second: Menu Buttons sprite (BnW)_291
+  - first:
+      213: -967377425506433370
+    second: Menu Buttons sprite (BnW)_292
+  - first:
+      213: 4289102993148782116
+    second: Menu Buttons sprite (BnW)_293
+  - first:
+      213: 4978263326389591685
+    second: Menu Buttons sprite (BnW)_294
+  - first:
+      213: -7674434404376883376
+    second: Menu Buttons sprite (BnW)_295
+  - first:
+      213: -1779647409533115664
+    second: Menu Buttons sprite (BnW)_296
+  - first:
+      213: 2890852667079190337
+    second: Menu Buttons sprite (BnW)_297
+  - first:
+      213: 1185614633537472239
+    second: Menu Buttons sprite (BnW)_298
+  - first:
+      213: 6341038169885387379
+    second: Menu Buttons sprite (BnW)_299
+  - first:
+      213: -1753995535597325252
+    second: Menu Buttons sprite (BnW)_300
+  - first:
+      213: -1706396002409798250
+    second: Menu Buttons sprite (BnW)_301
+  - first:
+      213: -4363547122373261817
+    second: Menu Buttons sprite (BnW)_302
+  - first:
+      213: 7437616002519535454
+    second: Menu Buttons sprite (BnW)_303
+  - first:
+      213: 2364417117143956676
+    second: Menu Buttons sprite (BnW)_304
+  - first:
+      213: -1648167317783781023
+    second: Menu Buttons sprite (BnW)_305
+  - first:
+      213: -718258623900651319
+    second: Menu Buttons sprite (BnW)_306
+  - first:
+      213: 6514022538815100569
+    second: Menu Buttons sprite (BnW)_307
+  - first:
+      213: -6149768457794843606
+    second: Menu Buttons sprite (BnW)_308
+  - first:
+      213: -8152092879073481828
+    second: Menu Buttons sprite (BnW)_309
+  - first:
+      213: 4241010843335339754
+    second: Menu Buttons sprite (BnW)_310
+  - first:
+      213: 9060821257441608076
+    second: Menu Buttons sprite (BnW)_311
+  - first:
+      213: -7261199848480989407
+    second: Menu Buttons sprite (BnW)_312
+  - first:
+      213: -2083318154473652143
+    second: Menu Buttons sprite (BnW)_313
+  - first:
+      213: 2549147495519263412
+    second: Menu Buttons sprite (BnW)_314
+  - first:
+      213: 5365268577614344842
+    second: Menu Buttons sprite (BnW)_315
+  - first:
+      213: -8823219292671144875
+    second: Menu Buttons sprite (BnW)_316
+  - first:
+      213: 7572323775926394030
+    second: Menu Buttons sprite (BnW)_317
+  - first:
+      213: -7292238560814011824
+    second: Menu Buttons sprite (BnW)_318
+  - first:
+      213: -8014122816650344633
+    second: Menu Buttons sprite (BnW)_319
+  - first:
+      213: 6556571716929368751
+    second: Menu Buttons sprite (BnW)_320
+  - first:
+      213: -7555860157675433382
+    second: Menu Buttons sprite (BnW)_321
+  - first:
+      213: 4147616412195322226
+    second: Menu Buttons sprite (BnW)_322
+  - first:
+      213: -7862171101190957129
+    second: Menu Buttons sprite (BnW)_323
+  - first:
+      213: 3163772397082702489
+    second: Menu Buttons sprite (BnW)_324
+  - first:
+      213: -2809347618030664371
+    second: Menu Buttons sprite (BnW)_325
+  - first:
+      213: -8552345106402316947
+    second: Menu Buttons sprite (BnW)_326
+  - first:
+      213: -5927015201718355717
+    second: Menu Buttons sprite (BnW)_327
+  - first:
+      213: -976948565428132140
+    second: Menu Buttons sprite (BnW)_328
+  - first:
+      213: -3576894223644210212
+    second: Menu Buttons sprite (BnW)_329
+  - first:
+      213: -8620681600194724913
+    second: Menu Buttons sprite (BnW)_330
+  - first:
+      213: -129696283103796758
+    second: Menu Buttons sprite (BnW)_331
+  - first:
+      213: -2299894475345131097
+    second: Menu Buttons sprite (BnW)_332
+  - first:
+      213: -8577134980192495409
+    second: Menu Buttons sprite (BnW)_333
+  - first:
+      213: 7591475151773410175
+    second: Menu Buttons sprite (BnW)_334
+  - first:
+      213: 539399544985951116
+    second: Menu Buttons sprite (BnW)_335
+  - first:
+      213: 6091810209391348604
+    second: Menu Buttons sprite (BnW)_336
+  - first:
+      213: -1968553856093513663
+    second: Menu Buttons sprite (BnW)_337
+  - first:
+      213: 8738685817425306409
+    second: Menu Buttons sprite (BnW)_338
+  - first:
+      213: 4721767383382561661
+    second: Menu Buttons sprite (BnW)_339
+  - first:
+      213: 806891572462941188
+    second: Menu Buttons sprite (BnW)_340
+  - first:
+      213: 3463913554996376003
+    second: Menu Buttons sprite (BnW)_341
+  - first:
+      213: 4762095645584546376
+    second: Menu Buttons sprite (BnW)_342
+  - first:
+      213: -4284839535935783385
+    second: Menu Buttons sprite (BnW)_343
+  - first:
+      213: 2654097889269676226
+    second: Menu Buttons sprite (BnW)_344
+  - first:
+      213: 8920386003483405343
+    second: Menu Buttons sprite (BnW)_345
+  - first:
+      213: -4989677374098342342
+    second: Menu Buttons sprite (BnW)_346
+  - first:
+      213: -8844781469960074671
+    second: Menu Buttons sprite (BnW)_347
+  - first:
+      213: -5530972052272589997
+    second: Menu Buttons sprite (BnW)_348
+  - first:
+      213: -2976865809473930886
+    second: Menu Buttons sprite (BnW)_349
+  - first:
+      213: -3852199154440800872
+    second: Menu Buttons sprite (BnW)_350
+  - first:
+      213: 2559194253035109475
+    second: Menu Buttons sprite (BnW)_351
+  - first:
+      213: -7901535367482210164
+    second: Menu Buttons sprite (BnW)_352
+  - first:
+      213: -4464990387367355693
+    second: Menu Buttons sprite (BnW)_353
+  - first:
+      213: -2010897123494583395
+    second: Menu Buttons sprite (BnW)_354
+  - first:
+      213: -5858320221687908991
+    second: Menu Buttons sprite (BnW)_355
+  - first:
+      213: 4900906298449703652
+    second: Menu Buttons sprite (BnW)_356
+  - first:
+      213: -2846934937137517585
+    second: Menu Buttons sprite (BnW)_357
+  - first:
+      213: 6455840718039882284
+    second: Menu Buttons sprite (BnW)_358
+  - first:
+      213: 2047770788841046326
+    second: Menu Buttons sprite (BnW)_359
+  - first:
+      213: -9009484948164730237
+    second: Menu Buttons sprite (BnW)_360
+  - first:
+      213: -7494163740265334154
+    second: Menu Buttons sprite (BnW)_361
+  - first:
+      213: -3733884769347967160
+    second: Menu Buttons sprite (BnW)_362
+  - first:
+      213: -2270472737713340840
+    second: Menu Buttons sprite (BnW)_363
+  - first:
+      213: 7839138863314330953
+    second: Menu Buttons sprite (BnW)_364
+  - first:
+      213: -2710548614433836350
+    second: Menu Buttons sprite (BnW)_365
+  - first:
+      213: -273938236705479953
+    second: Menu Buttons sprite (BnW)_366
+  - first:
+      213: -801801987257260002
+    second: Menu Buttons sprite (BnW)_367
+  - first:
+      213: -4506910785660653407
+    second: Menu Buttons sprite (BnW)_368
+  - first:
+      213: 7500317763913638566
+    second: Menu Buttons sprite (BnW)_369
+  - first:
+      213: 4987220840470666689
+    second: Menu Buttons sprite (BnW)_370
+  - first:
+      213: -2873558801356759587
+    second: Menu Buttons sprite (BnW)_371
+  - first:
+      213: 4037050669711726419
+    second: Menu Buttons sprite (BnW)_372
+  - first:
+      213: -6382708311838569176
+    second: Menu Buttons sprite (BnW)_373
+  - first:
+      213: -3094586212711047474
+    second: Menu Buttons sprite (BnW)_374
+  - first:
+      213: 3598382367259551503
+    second: Menu Buttons sprite (BnW)_375
+  - first:
+      213: -7662585584186779467
+    second: Menu Buttons sprite (BnW)_376
+  - first:
+      213: -4488004300260009802
+    second: Menu Buttons sprite (BnW)_377
+  - first:
+      213: -8029191419040485632
+    second: Menu Buttons sprite (BnW)_378
+  - first:
+      213: -766052778907616304
+    second: Menu Buttons sprite (BnW)_379
+  - first:
+      213: -2676982072913881151
+    second: Menu Buttons sprite (BnW)_380
+  - first:
+      213: 3922156476449603055
+    second: Menu Buttons sprite (BnW)_381
+  - first:
+      213: 7733549847869744917
+    second: Menu Buttons sprite (BnW)_382
+  - first:
+      213: 7402740817792379190
+    second: Menu Buttons sprite (BnW)_383
+  - first:
+      213: -9059089107364752487
+    second: Menu Buttons sprite (BnW)_384
+  - first:
+      213: -2783839014957981494
+    second: Menu Buttons sprite (BnW)_385
+  - first:
+      213: -6872208252443478628
+    second: Menu Buttons sprite (BnW)_386
+  - first:
+      213: -9216828464605883091
+    second: Menu Buttons sprite (BnW)_387
+  - first:
+      213: 4148603294275718484
+    second: Menu Buttons sprite (BnW)_388
+  - first:
+      213: 226556826176336910
+    second: Menu Buttons sprite (BnW)_389
+  - first:
+      213: -3687637133753078474
+    second: Menu Buttons sprite (BnW)_390
+  - first:
+      213: 7565865857876430820
+    second: Menu Buttons sprite (BnW)_391
+  - first:
+      213: 4850538580540586184
+    second: Menu Buttons sprite (BnW)_392
+  - first:
+      213: -3169660661465953276
+    second: Menu Buttons sprite (BnW)_393
+  - first:
+      213: 6963976111645799121
+    second: Menu Buttons sprite (BnW)_394
+  - first:
+      213: -2447849638541271642
+    second: Menu Buttons sprite (BnW)_395
+  - first:
+      213: -1329926420601080301
+    second: Menu Buttons sprite (BnW)_396
+  - first:
+      213: 2736094825025986
+    second: Menu Buttons sprite (BnW)_397
+  - first:
+      213: 7463733296559180566
+    second: Menu Buttons sprite (BnW)_398
+  - first:
+      213: -6176229444653337105
+    second: Menu Buttons sprite (BnW)_399
+  - first:
+      213: -3495200058885256061
+    second: Menu Buttons sprite (BnW)_400
+  - first:
+      213: -9011745719543462654
+    second: Menu Buttons sprite (BnW)_401
+  - first:
+      213: 1381990787374873246
+    second: Menu Buttons sprite (BnW)_402
+  - first:
+      213: -7119464730868054173
+    second: Menu Buttons sprite (BnW)_403
+  - first:
+      213: 1939759129466487301
+    second: Menu Buttons sprite (BnW)_404
+  - first:
+      213: 3188996524564708286
+    second: Menu Buttons sprite (BnW)_405
+  - first:
+      213: -707091100675388236
+    second: Menu Buttons sprite (BnW)_406
+  - first:
+      213: -4727441641145411609
+    second: Menu Buttons sprite (BnW)_407
+  - first:
+      213: 1674062499000567092
+    second: Menu Buttons sprite (BnW)_408
+  - first:
+      213: -2295710023753740479
+    second: Menu Buttons sprite (BnW)_409
+  - first:
+      213: -8499457431558886850
+    second: Menu Buttons sprite (BnW)_410
+  - first:
+      213: -5269829391385658733
+    second: Menu Buttons sprite (BnW)_411
+  - first:
+      213: 4193259948470428712
+    second: Menu Buttons sprite (BnW)_412
+  - first:
+      213: -8674409221312744515
+    second: Menu Buttons sprite (BnW)_413
+  - first:
+      213: 3788870654325654327
+    second: Menu Buttons sprite (BnW)_414
+  - first:
+      213: -5370327688322525779
+    second: Menu Buttons sprite (BnW)_415
+  - first:
+      213: 2757406351446753835
+    second: Menu Buttons sprite (BnW)_416
+  - first:
+      213: -7399286918674992474
+    second: Menu Buttons sprite (BnW)_417
+  - first:
+      213: 3569421071261567862
+    second: Menu Buttons sprite (BnW)_418
+  - first:
+      213: -6752199954300472635
+    second: Menu Buttons sprite (BnW)_419
+  - first:
+      213: -7460484903965357973
+    second: Menu Buttons sprite (BnW)_420
+  - first:
+      213: -2326317702427532726
+    second: Menu Buttons sprite (BnW)_421
+  - first:
+      213: -3980030405673783795
+    second: Menu Buttons sprite (BnW)_422
+  - first:
+      213: 7622416940309220948
+    second: Menu Buttons sprite (BnW)_423
+  - first:
+      213: -1504335097963371091
+    second: Menu Buttons sprite (BnW)_424
+  - first:
+      213: 8199210514425003925
+    second: Menu Buttons sprite (BnW)_425
+  - first:
+      213: 9041726088151174797
+    second: Menu Buttons sprite (BnW)_426
+  - first:
+      213: -6959441324548937704
+    second: Menu Buttons sprite (BnW)_427
+  - first:
+      213: 4612983125738599531
+    second: Menu Buttons sprite (BnW)_428
+  - first:
+      213: -4320727995946939230
+    second: Menu Buttons sprite (BnW)_429
+  - first:
+      213: -2067282142202588133
+    second: Menu Buttons sprite (BnW)_430
+  - first:
+      213: 1440937842978423128
+    second: Menu Buttons sprite (BnW)_431
+  - first:
+      213: -3744569720400983443
+    second: Menu Buttons sprite (BnW)_432
+  - first:
+      213: 8033758329683201203
+    second: Menu Buttons sprite (BnW)_433
+  - first:
+      213: 3849136163698619603
+    second: Menu Buttons sprite (BnW)_434
+  - first:
+      213: -423328324469087995
+    second: Menu Buttons sprite (BnW)_435
+  - first:
+      213: 4893464059723115700
+    second: Menu Buttons sprite (BnW)_436
+  - first:
+      213: -4106085575060537284
+    second: Menu Buttons sprite (BnW)_437
+  - first:
+      213: -6764108937723948279
+    second: Menu Buttons sprite (BnW)_438
+  - first:
+      213: -6833221285071082891
+    second: Menu Buttons sprite (BnW)_439
+  - first:
+      213: 8398850169177951882
+    second: Menu Buttons sprite (BnW)_440
+  - first:
+      213: 2475883080026047859
+    second: Menu Buttons sprite (BnW)_441
+  - first:
+      213: -731371607707450868
+    second: Menu Buttons sprite (BnW)_442
+  - first:
+      213: 3031244492662722372
+    second: Menu Buttons sprite (BnW)_443
+  - first:
+      213: -7579955268038020301
+    second: Menu Buttons sprite (BnW)_444
+  - first:
+      213: -1649881225115505948
+    second: Menu Buttons sprite (BnW)_445
+  - first:
+      213: -1249413974214532999
+    second: Menu Buttons sprite (BnW)_446
+  - first:
+      213: 3638105250786063486
+    second: Menu Buttons sprite (BnW)_447
+  - first:
+      213: 7011072468520803446
+    second: Menu Buttons sprite (BnW)_448
+  - first:
+      213: -8165300160816809607
+    second: Menu Buttons sprite (BnW)_449
+  - first:
+      213: 3265764582956858267
+    second: Menu Buttons sprite (BnW)_450
+  - first:
+      213: -3895925348578209258
+    second: Menu Buttons sprite (BnW)_451
+  - first:
+      213: -1702584667852870250
+    second: Menu Buttons sprite (BnW)_452
+  - first:
+      213: -462181558515605183
+    second: Menu Buttons sprite (BnW)_453
+  - first:
+      213: -5217493220920538646
+    second: Menu Buttons sprite (BnW)_454
+  - first:
+      213: -2148333484158317374
+    second: Menu Buttons sprite (BnW)_455
+  - first:
+      213: 4976832873523538616
+    second: Menu Buttons sprite (BnW)_456
+  - first:
+      213: -6686097327981237245
+    second: Menu Buttons sprite (BnW)_457
+  - first:
+      213: 6547494630283146990
+    second: Menu Buttons sprite (BnW)_458
+  - first:
+      213: 6492796758890365104
+    second: Menu Buttons sprite (BnW)_459
+  - first:
+      213: 7502187072205557729
+    second: Menu Buttons sprite (BnW)_460
+  - first:
+      213: 724076326993722
+    second: Menu Buttons sprite (BnW)_461
+  - first:
+      213: -6617370007677756046
+    second: Menu Buttons sprite (BnW)_462
+  - first:
+      213: -300488624422604546
+    second: Menu Buttons sprite (BnW)_463
+  - first:
+      213: 7896138281914209800
+    second: Menu Buttons sprite (BnW)_464
+  - first:
+      213: 9027014900267871375
+    second: Menu Buttons sprite (BnW)_465
+  - first:
+      213: -1141014272124278037
+    second: Menu Buttons sprite (BnW)_466
+  - first:
+      213: -8536453466675889978
+    second: Menu Buttons sprite (BnW)_467
+  - first:
+      213: 731367550074516938
+    second: Menu Buttons sprite (BnW)_468
+  - first:
+      213: -8624247447569869546
+    second: Menu Buttons sprite (BnW)_469
+  - first:
+      213: -593179818747524378
+    second: Menu Buttons sprite (BnW)_470
+  - first:
+      213: 3302014413542272249
+    second: Menu Buttons sprite (BnW)_471
+  - first:
+      213: 5206155274111394206
+    second: Menu Buttons sprite (BnW)_472
+  - first:
+      213: -2701726073189120195
+    second: Menu Buttons sprite (BnW)_473
+  - first:
+      213: 6976085612723220682
+    second: Menu Buttons sprite (BnW)_474
+  - first:
+      213: 5045616429809671786
+    second: Menu Buttons sprite (BnW)_475
+  - first:
+      213: -473438143998080428
+    second: Menu Buttons sprite (BnW)_476
+  - first:
+      213: -5440917115227063007
+    second: Menu Buttons sprite (BnW)_477
+  - first:
+      213: -6049888303474315559
+    second: Menu Buttons sprite (BnW)_478
+  - first:
+      213: -1130677054384953635
+    second: Menu Buttons sprite (BnW)_479
+  - first:
+      213: 1316257938684134334
+    second: Menu Buttons sprite (BnW)_480
+  - first:
+      213: -3075031528624508284
+    second: Menu Buttons sprite (BnW)_481
+  - first:
+      213: -8192097989257714588
+    second: Menu Buttons sprite (BnW)_482
+  - first:
+      213: 558573207864751675
+    second: Menu Buttons sprite (BnW)_483
+  - first:
+      213: 7959161335476360351
+    second: Menu Buttons sprite (BnW)_484
+  - first:
+      213: -1869453855600054308
+    second: Menu Buttons sprite (BnW)_485
+  - first:
+      213: -1334867376111144620
+    second: Menu Buttons sprite (BnW)_486
+  - first:
+      213: -3389417229159118467
+    second: Menu Buttons sprite (BnW)_487
+  - first:
+      213: 660156777517737799
+    second: Menu Buttons sprite (BnW)_488
+  - first:
+      213: -5333433148241894979
+    second: Menu Buttons sprite (BnW)_489
+  - first:
+      213: -5779173941786216754
+    second: Menu Buttons sprite (BnW)_490
+  - first:
+      213: -3790263718349907968
+    second: Menu Buttons sprite (BnW)_491
+  - first:
+      213: 8562749199300263255
+    second: Menu Buttons sprite (BnW)_492
+  - first:
+      213: 5240888669361318312
+    second: Menu Buttons sprite (BnW)_493
+  - first:
+      213: -3484795605390943002
+    second: Menu Buttons sprite (BnW)_494
+  - first:
+      213: -1239436127570003441
+    second: Menu Buttons sprite (BnW)_495
+  - first:
+      213: 3425328403278675855
+    second: Menu Buttons sprite (BnW)_496
+  - first:
+      213: -2998922643840248645
+    second: Menu Buttons sprite (BnW)_497
+  - first:
+      213: -6219648254406110482
+    second: Menu Buttons sprite (BnW)_498
+  - first:
+      213: -5852899169685062036
+    second: Menu Buttons sprite (BnW)_499
+  - first:
+      213: 8170853779277488930
+    second: Menu Buttons sprite (BnW)_500
+  - first:
+      213: 4266534426256815144
+    second: Menu Buttons sprite (BnW)_501
+  - first:
+      213: -2763960449363236323
+    second: Menu Buttons sprite (BnW)_502
+  - first:
+      213: -994858678031336580
+    second: Menu Buttons sprite (BnW)_503
+  - first:
+      213: 2144095231408743757
+    second: Menu Buttons sprite (BnW)_504
+  - first:
+      213: 4058209557687620186
+    second: Menu Buttons sprite (BnW)_505
+  - first:
+      213: -7448637890574705071
+    second: Menu Buttons sprite (BnW)_506
+  - first:
+      213: 6657127386751076703
+    second: Menu Buttons sprite (BnW)_507
+  - first:
+      213: -8573538176504506981
+    second: Menu Buttons sprite (BnW)_508
+  - first:
+      213: -2817848649244840059
+    second: Menu Buttons sprite (BnW)_509
+  - first:
+      213: -629076080439329705
+    second: Menu Buttons sprite (BnW)_510
+  - first:
+      213: 4862540471549322885
+    second: Menu Buttons sprite (BnW)_511
+  - first:
+      213: -1414209867840878429
+    second: Menu Buttons sprite (BnW)_512
+  - first:
+      213: 8124544526253217592
+    second: Menu Buttons sprite (BnW)_513
+  - first:
+      213: -6834168546800803693
+    second: Menu Buttons sprite (BnW)_514
+  - first:
+      213: -6578478159443191362
+    second: Menu Buttons sprite (BnW)_515
+  - first:
+      213: -633068341588829389
+    second: Menu Buttons sprite (BnW)_516
+  - first:
+      213: 1176721429234481723
+    second: Menu Buttons sprite (BnW)_517
+  - first:
+      213: 6233119678133349307
+    second: Menu Buttons sprite (BnW)_518
+  - first:
+      213: 7715872246698621935
+    second: Menu Buttons sprite (BnW)_519
+  - first:
+      213: -3403514544526929658
+    second: Menu Buttons sprite (BnW)_520
+  - first:
+      213: 2062047561227606493
+    second: Menu Buttons sprite (BnW)_521
+  - first:
+      213: -4197439144735385238
+    second: Menu Buttons sprite (BnW)_522
+  - first:
+      213: 7409837256472313972
+    second: Menu Buttons sprite (BnW)_523
+  - first:
+      213: -116712027172132545
+    second: Menu Buttons sprite (BnW)_524
+  - first:
+      213: 4021980345260104479
+    second: Menu Buttons sprite (BnW)_525
+  - first:
+      213: -3635955055989284146
+    second: Menu Buttons sprite (BnW)_526
+  - first:
+      213: 6831959129804649449
+    second: Menu Buttons sprite (BnW)_527
+  - first:
+      213: -7531098207936026424
+    second: Menu Buttons sprite (BnW)_528
+  - first:
+      213: 294492095571170767
+    second: Menu Buttons sprite (BnW)_529
+  - first:
+      213: -3160213837749869463
+    second: Menu Buttons sprite (BnW)_530
+  - first:
+      213: -5778077617768634608
+    second: Menu Buttons sprite (BnW)_531
+  - first:
+      213: 3067032967223906831
+    second: Menu Buttons sprite (BnW)_532
+  - first:
+      213: 4592432712250611202
+    second: Menu Buttons sprite (BnW)_533
+  - first:
+      213: 4786867167541641157
+    second: Menu Buttons sprite (BnW)_534
+  - first:
+      213: 966678632541171464
+    second: Menu Buttons sprite (BnW)_535
+  - first:
+      213: 8618772475568331687
+    second: Menu Buttons sprite (BnW)_536
+  - first:
+      213: 8116111007745254316
+    second: Menu Buttons sprite (BnW)_537
+  - first:
+      213: -5526932973311739247
+    second: Menu Buttons sprite (BnW)_538
+  - first:
+      213: 6333353007838942153
+    second: Menu Buttons sprite (BnW)_539
+  - first:
+      213: -6136276405873678276
+    second: Menu Buttons sprite (BnW)_540
+  - first:
+      213: -5931669746324910595
+    second: Menu Buttons sprite (BnW)_541
+  - first:
+      213: 8363915333194052176
+    second: Menu Buttons sprite (BnW)_542
+  - first:
+      213: 3998417322082642431
+    second: Menu Buttons sprite (BnW)_543
+  - first:
+      213: -4271850582465604911
+    second: Menu Buttons sprite (BnW)_544
+  - first:
+      213: -1620764549241817257
+    second: Menu Buttons sprite (BnW)_545
+  - first:
+      213: -5143982795593293139
+    second: Menu Buttons sprite (BnW)_546
+  - first:
+      213: 86034251500626946
+    second: Menu Buttons sprite (BnW)_547
+  - first:
+      213: -7487843385409641705
+    second: Menu Buttons sprite (BnW)_548
+  - first:
+      213: 6071306540563224907
+    second: Menu Buttons sprite (BnW)_549
+  - first:
+      213: 3431930892903823868
+    second: Menu Buttons sprite (BnW)_550
+  - first:
+      213: 2473145425908694334
+    second: Menu Buttons sprite (BnW)_551
+  - first:
+      213: -7124297597685665067
+    second: Menu Buttons sprite (BnW)_552
+  - first:
+      213: 5440287318318979362
+    second: Menu Buttons sprite (BnW)_553
+  - first:
+      213: -4252708172318151820
+    second: Menu Buttons sprite (BnW)_554
+  - first:
+      213: -2669295393813099030
+    second: Menu Buttons sprite (BnW)_555
+  - first:
+      213: -1075291792136593899
+    second: Menu Buttons sprite (BnW)_556
+  - first:
+      213: 9077754369457193758
+    second: Menu Buttons sprite (BnW)_557
+  - first:
+      213: -3622420429820595750
+    second: Menu Buttons sprite (BnW)_558
+  - first:
+      213: -4878044325174337006
+    second: Menu Buttons sprite (BnW)_559
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cbf729b181bab50800000000000000
+      internalID: 6605399785169992778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 824
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8369b34e618f884a0800000000000000
+      internalID: -6590745277454641608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_2
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 824
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8906f1310040b800800000000000000
+      internalID: 626070722081851790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b48640f9554b4990800000000000000
+      internalID: -7400745310067718989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_4
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 614
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659acf3613bbc9ed0800000000000000
+      internalID: -2405842280117393066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_5
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 614
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f79fa075c6f31a0800000000000000
+      internalID: -6827619388968304841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aaffebf732a47e0800000000000000
+      internalID: -1780571671099364792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 404
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21afe5145167a0440800000000000000
+      internalID: 4902860978009340434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_8
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 404
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a41aef4f6c6a3c60800000000000000
+      internalID: 7798664930083345572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64a591ee8b13e710800000000000000
+      internalID: 1721249783069647981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 194
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca64325c6f7b29310800000000000000
+      internalID: 1410391903817647788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Buttons sprite (BnW)_11
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 194
+        width: 608
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9940b4bc71697f6f0800000000000000
+      internalID: -650886592192641895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

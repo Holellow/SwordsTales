@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using Dialogue_System;
+using Sound;
+using UnityEngine;
 
 namespace Player
 {
@@ -6,16 +9,20 @@ namespace Player
     {
         [SerializeField] private Vector2 v2Direction;
         [SerializeField] private Vector2 knockbackSpeed;
+        [SerializeField] private AudioClip runSound;
+        [SerializeField] private AudioClip receiveDamageSound;
+        [SerializeField] private AudioClip hitSwordSword;
         
         [SerializeField] private Animator playerAnimator;
         
         [SerializeField] private GameObject player;
-        
+
+        [SerializeField] private NPC npc;
         [SerializeField] private float jumpGravity;
         [SerializeField] private float knockbackDuration;
         [SerializeField] private float jumpForce = 15.0f;
         [SerializeField] private float speed = 3.0f;
-        [SerializeField] private float direction;
+        [SerializeField] private float direction = 1;
         [SerializeField] private float jumpPressedTime;
         [SerializeField] private float jumpRememberer;
         [SerializeField] private float groundRememberer;
@@ -220,11 +227,38 @@ namespace Player
                 }
             }
         }
+
+        private void PlayRunSound()
+        {
+            SoundManager.Instance.PlaySound(runSound);
+        }
+        
+        private void PlaySwordSound()
+        {
+            SoundManager.Instance.PlaySound(hitSwordSword);
+        }
+        
+        private void PlayReceiveDamageSound()
+        {
+            SoundManager.Instance.PlaySound(receiveDamageSound);
+        }
         
         private void Run()
         {
             v2Direction.x = direction;
             _rigidbody.position = Vector3.MoveTowards(_rigidbody.position, _rigidbody.position + v2Direction, speed * Time.deltaTime);
+            
         }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("NPC"))
+            {
+                other.gameObject.SendMessage("StartDialogue");
+            }
+        }
+
+       
+        
     }
 }

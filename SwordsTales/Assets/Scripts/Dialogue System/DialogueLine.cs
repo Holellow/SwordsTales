@@ -9,7 +9,10 @@ namespace Dialogue_System
         [Header ("Text Options")]
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
+        
         [SerializeField] private float delay;
+        [SerializeField] private float delayBetweenLines;
+        
         [SerializeField] private string input;
 
         [Header("Sound")] 
@@ -25,8 +28,12 @@ namespace Dialogue_System
             textHolder.text = "";
             
             imageHolder.sprite = characterSprite;
-            StartCoroutine(WriteText(input, textHolder,delay,textColor,textFont,sound));
             imageHolder.preserveAspect = true;
+        }
+
+        private void Start()
+        {
+            StartCoroutine(WriteText(input, textHolder,delay,textColor,textFont,sound,delayBetweenLines));
         }
     }
 }

@@ -10,7 +10,6 @@ namespace Sound
         private void Awake()
         {
             Instance = this;
-            Debug.Log(Instance);
             _source = GetComponent<AudioSource>();
         }
 

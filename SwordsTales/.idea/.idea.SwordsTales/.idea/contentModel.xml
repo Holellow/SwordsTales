@@ -7,7 +7,12 @@
     <e p="H:\SwordsTales\SwordsTales" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Demon.cs" t="Include" />
+        <e p="FinalDialogue.cs" t="Include" />
         <e p="HealthBar.cs" t="Include" />
+        <e p="LevelLoaderScript.cs" t="Include" />
+        <e p="LevelStart.cs" t="Include" />
+        <e p="PauseMenu.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Camera" t="Include">
             <e p="CameraFollowScript.cs" t="Include" />
@@ -19,11 +24,16 @@
             <e p="DialogueHolder.cs" t="Include" />
             <e p="DialogueLine.cs" t="Include" />
             <e p="DialogueSystemClass.cs" t="Include" />
+            <e p="NPC.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="EnemyController.cs" t="Include" />
           </e>
+          <e p="MainMenu" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+          </e>
           <e p="Manager" t="Include">
+            <e p="FinalState.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="ParralaxEffect.cs" t="Include" />
@@ -55,6 +65,11 @@
           <e p="Unit.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
+          <e p="Characters (Not main)" t="Include">
+            <e p="Hero Knight 2" t="Include">
+              <e p="License.txt" t="Include" />
+            </e>
+          </e>
           <e p="Monsters" t="Include">
             <e p="Gothicvania" t="Include">
               <e p="public-license.txt" t="Include" />

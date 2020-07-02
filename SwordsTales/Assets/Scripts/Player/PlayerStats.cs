@@ -25,7 +25,6 @@ public class PlayerStats : MonoBehaviour
 
     public void DecreaseHealth(float amount)
     {
-        Debug.Log("hit");
         currentHealth -= amount;
         healthBar.HealthBarValue(currentHealth);
         if (currentHealth <= 0)

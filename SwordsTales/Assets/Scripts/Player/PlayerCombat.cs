@@ -1,15 +1,17 @@
 ﻿using Player;
+using Sound;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class PlayerCombat : MonoBehaviour, IPointerClickHandler
-{ 
+{
+    
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private Transform attackHitBoxPos;
     
     [SerializeField] private float inputTimer;
     [SerializeField] private float attackRadius;
-    
+    [SerializeField] private AudioClip _receiveDamageSound;
     [SerializeField] private int attackDamage;
     
     [SerializeField] private bool combatEnabled;
@@ -19,7 +21,6 @@ public class PlayerCombat : MonoBehaviour, IPointerClickHandler
     private Animator _playerAnimator;
     private Rigidbody2D _rigidbody2D;
     private PlayerStats _playerStats;
-    
     public Transform attackPoint;
 
     private bool _gotInput;
@@ -152,7 +153,7 @@ public class PlayerCombat : MonoBehaviour, IPointerClickHandler
     {
         if (PC.GetDashState()) return;
         int direction;
-        
+        SoundManager.Instance.PlaySound(_receiveDamageSound);
         _playerStats.DecreaseHealth(attackDetails[0]);
         if (attackDetails[1] < transform.position.x)
         {
