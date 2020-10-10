@@ -14,6 +14,7 @@ namespace Dialogue_System
 
       private IEnumerator StartDialogue()
       {
+         Debug.Log("sadasd");
          yield return new WaitUntil(()=>Input.GetMouseButton(0));
          if (player != null && dialogueHolder._talkedOnce == false)
          {

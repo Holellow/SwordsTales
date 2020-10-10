@@ -9,6 +9,7 @@ namespace Player
     {
         [SerializeField] private Vector2 v2Direction;
         [SerializeField] private Vector2 knockbackSpeed;
+        
         [SerializeField] private AudioClip runSound;
         [SerializeField] private AudioClip receiveDamageSound;
         [SerializeField] private AudioClip hitSwordSword;
@@ -18,6 +19,7 @@ namespace Player
         [SerializeField] private GameObject player;
 
         [SerializeField] private NPC npc;
+        
         [SerializeField] private float jumpGravity;
         [SerializeField] private float knockbackDuration;
         [SerializeField] private float jumpForce = 15.0f;
@@ -258,7 +260,5 @@ namespace Player
             }
         }
 
-       
-        
     }
 }

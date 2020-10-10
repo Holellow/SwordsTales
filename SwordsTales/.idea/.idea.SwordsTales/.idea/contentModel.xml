@@ -7,6 +7,7 @@
     <e p="H:\SwordsTales\SwordsTales" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Death.cs" t="Include" />
         <e p="Demon.cs" t="Include" />
         <e p="FinalDialogue.cs" t="Include" />
         <e p="HealthBar.cs" t="Include" />
@@ -61,6 +62,10 @@
           </e>
           <e p="Timelines" t="Include">
             <e p="Timeline.cs" t="Include" />
+          </e>
+          <e p="Training" t="Include">
+            <e p="Weapon.cs" t="Include" />
+            <e p="WeaponData.cs" t="Include" />
           </e>
           <e p="Unit.cs" t="Include" />
         </e>
