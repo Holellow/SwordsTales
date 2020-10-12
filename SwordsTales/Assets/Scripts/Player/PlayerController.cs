@@ -1,5 +1,4 @@
-﻿using System;
-using Dialogue_System;
+﻿using Dialogue_System;
 using Sound;
 using UnityEngine;
 
@@ -7,44 +6,34 @@ namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private Vector2 v2Direction;
-        [SerializeField] private Vector2 knockbackSpeed;
+        [SerializeField] private Vector2 _v2Direction;
+        [SerializeField] private Vector2 _knockbackSpeed;
         
-        [SerializeField] private AudioClip runSound;
-        [SerializeField] private AudioClip receiveDamageSound;
-        [SerializeField] private AudioClip hitSwordSword;
+        [SerializeField] private AudioClip _runSound;
+        [SerializeField] private AudioClip _receiveDamageSound;
+        [SerializeField] private AudioClip _hitSwordSword;
         
-        [SerializeField] private Animator playerAnimator;
-        
-        [SerializeField] private GameObject player;
+        [SerializeField] private Animator _playerAnimator;
 
-        [SerializeField] private NPC npc;
-        
-        [SerializeField] private float jumpGravity;
-        [SerializeField] private float knockbackDuration;
-        [SerializeField] private float jumpForce = 15.0f;
-        [SerializeField] private float speed = 3.0f;
-        [SerializeField] private float direction = 1;
-        [SerializeField] private float jumpPressedTime;
-        [SerializeField] private float jumpRememberer;
-        [SerializeField] private float groundRememberer;
-        [SerializeField] private float groundRemembererTime;
+        [SerializeField] private float _jumpGravity;
+        [SerializeField] private float _knockbackDuration;
+        [SerializeField] private float _jumpForce = 15.0f;
+        [SerializeField] private float _speed = 3.0f;
+        [SerializeField] private float _direction = 1;
+        [SerializeField] private float _jumpPressedTime;
+        [SerializeField] private float _jumpRememberer;
+        [SerializeField] private float _groundRememberer;
+        [SerializeField] private float _groundRemembererTime;
         [SerializeField] private bool _knockback;
 
-        [SerializeField] private bool isGrounded;
-        [SerializeField] private bool isFacingRight = true;
-        
-        public Transform groundCheck;
+        [SerializeField] private bool _isGrounded;
+        [SerializeField] private bool _isFacingRight = true;
 
-        public LayerMask whatIsGround;
-        
-        private SpriteRenderer _playerSpriteRenderer;
         private Rigidbody2D _rigidbody;
        
         private static readonly int Speed = Animator.StringToHash("Speed");
         private static readonly int IsJumping = Animator.StringToHash("isJumping");
-        private static readonly int IsJumpingEnd = Animator.StringToHash("isJumpingEnd");
-        
+
         private float _dashTimeLeft;
         private float _lastImageXpos;
         private float _lastDash;
@@ -54,8 +43,12 @@ namespace Player
         
         private bool _isDashing;
         private bool _isJumping;
-        private bool jumpedOnce = false;
+        private bool jumpedOnce;
             
+        public Transform groundCheck;
+
+        public LayerMask whatIsGround;
+        
         public float groundCheckRadius;
         public float dashTime;
         public float dashSpeed;
@@ -65,13 +58,7 @@ namespace Player
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
-            _playerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
-            playerAnimator = GetComponent<Animator>();
-        }
-        
-        private void Start()
-        {
-            _playerSpriteRenderer = GetComponent<SpriteRenderer>();
+            _playerAnimator = GetComponent<Animator>();
         }
         
         private void FixedUpdate()
@@ -96,12 +83,12 @@ namespace Player
         {
             _knockback = true;
             _knockbackStartTime = Time.time;
-            _rigidbody.velocity = new Vector2(knockbackSpeed.x * direction,knockbackSpeed.y);
+            _rigidbody.velocity = new Vector2(_knockbackSpeed.x * direction,_knockbackSpeed.y);
         }
 
         private void CheckKnockback()
         {
-            if (Time.time >= _knockbackStartTime + knockbackDuration && _knockback)
+            if (Time.time >= _knockbackStartTime + _knockbackDuration && _knockback)
             {
                 _knockback = false;
                 _rigidbody.velocity = new Vector2(0.0f,_rigidbody.velocity.y);
@@ -110,8 +97,8 @@ namespace Player
         
         private void Flip()
         {
-            direction *= -1;
-            isFacingRight = !isFacingRight;
+            _direction *= -1;
+            _isFacingRight = !_isFacingRight;
             transform.Rotate(0.0f, 180.0f, 0.0f);
         }
         
@@ -122,7 +109,7 @@ namespace Player
 
             if (_dashTimeLeft > 0)
             {
-                _rigidbody.velocity = new Vector2(dashSpeed * direction,_rigidbody.velocity.y);
+                _rigidbody.velocity = new Vector2(dashSpeed * _direction,_rigidbody.velocity.y);
                 _dashTimeLeft -= Time.deltaTime;
 
                 if (!(Mathf.Abs(transform.position.x - _lastImageXpos) > distanceBetweenImages))
@@ -143,12 +130,12 @@ namespace Player
 
         private void CheckMovementDirection()
         {
-            playerAnimator.SetFloat(Speed,Mathf.Abs(direction));
-            if(isFacingRight && direction < 0 && !_knockback)
+            _playerAnimator.SetFloat(Speed,Mathf.Abs(_direction));
+            if(_isFacingRight && _direction < 0 && !_knockback)
             {
                 Flip();
             }
-            else if(!isFacingRight && direction > 0 && !_knockback)
+            else if(!_isFacingRight && _direction > 0 && !_knockback)
             {
                 Flip();
             }
@@ -166,53 +153,52 @@ namespace Player
 
         private void Jump()
         {
-            _rigidbody.velocity = Vector2.up * jumpForce;
-            
+            _rigidbody.velocity = Vector2.up * _jumpForce;
         }
 
         private void Grounded()
         {
-            _isJumping = !isGrounded;
-            playerAnimator.SetBool(IsJumping,_isJumping);
-           isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, groundCheckRadius,whatIsGround);
-           if (isGrounded)
+            _isJumping = !_isGrounded;
+            _playerAnimator.SetBool(IsJumping,_isJumping);
+           _isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, groundCheckRadius,whatIsGround);
+           if (_isGrounded)
            {
-               groundRememberer = groundRemembererTime;
+               _groundRememberer = _groundRemembererTime;
                jumpedOnce = false;
            }
            else
            {
-               groundRememberer -= Time.deltaTime;
+               _groundRememberer -= Time.deltaTime;
            }
            
         }
 
         private void CheckInput()
         {
-            direction = Input.GetAxisRaw("Horizontal");
+            _direction = Input.GetAxisRaw("Horizontal");
             //Jump block ----------------------------------------------------------------
-            jumpRememberer -= Time.deltaTime;
+            _jumpRememberer -= Time.deltaTime;
             if (Input.GetKeyUp(KeyCode.Space) )
             {
                 if (_rigidbody.velocity.y > 0)
                 {
-                    _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * jumpGravity);
+                    _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * _jumpGravity);
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Space)&& isGrounded)
+            if (Input.GetKeyDown(KeyCode.Space)&& _isGrounded)
             {
-                jumpRememberer = jumpPressedTime;
+                _jumpRememberer = _jumpPressedTime;
             }
 
-            if (jumpRememberer > 0 && !_knockback && groundRememberer > 0 && !jumpedOnce)
+            if (_jumpRememberer > 0 && !_knockback && _groundRememberer > 0 && !jumpedOnce)
             {
                 jumpedOnce = true;
-                jumpRememberer = 0;
-                groundRememberer = 0;
+                _jumpRememberer = 0;
+                _groundRememberer = 0;
             
                 Jump();
-                playerAnimator.SetBool(IsJumping, true);
+                _playerAnimator.SetBool(IsJumping, true);
                 
             }
             //-----------------------------------------------------------------------  
@@ -232,29 +218,29 @@ namespace Player
 
         private void PlayRunSound()
         {
-            SoundManager.Instance.PlaySound(runSound);
+            SoundManager.Instance.PlaySound(_runSound);
         }
         
         private void PlaySwordSound()
         {
-            SoundManager.Instance.PlaySound(hitSwordSword);
+            SoundManager.Instance.PlaySound(_hitSwordSword);
         }
         
         private void PlayReceiveDamageSound()
         {
-            SoundManager.Instance.PlaySound(receiveDamageSound);
+            SoundManager.Instance.PlaySound(_receiveDamageSound);
         }
         
         private void Run()
         {
-            v2Direction.x = direction;
-            _rigidbody.position = Vector3.MoveTowards(_rigidbody.position, _rigidbody.position + v2Direction, speed * Time.deltaTime);
+            _v2Direction.x = _direction;
+            _rigidbody.position = Vector3.MoveTowards(_rigidbody.position, _rigidbody.position + _v2Direction, _speed * Time.deltaTime);
             
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("NPC"))
+            if (other.GetComponent<NPC>())
             {
                 other.gameObject.SendMessage("StartDialogue");
             }

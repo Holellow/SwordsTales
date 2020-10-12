@@ -5,7 +5,8 @@ namespace Dialogue_System
 {
     public class DialogueLine : DialogueSystemClass
     {
-        private Text textHolder;
+        private Text _textHolder;
+        
         [Header ("Text Options")]
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
@@ -24,8 +25,8 @@ namespace Dialogue_System
        
         private void Awake()
         {
-            textHolder = GetComponent<Text>();
-            textHolder.text = "";
+            _textHolder = GetComponent<Text>();
+            _textHolder.text = "";
             
             imageHolder.sprite = characterSprite;
             imageHolder.preserveAspect = true;
@@ -33,7 +34,7 @@ namespace Dialogue_System
 
         private void Start()
         {
-            StartCoroutine(WriteText(input, textHolder,delay,textColor,textFont,sound,delayBetweenLines));
+            StartCoroutine(WriteText(input, _textHolder,delay,textColor,textFont,sound,delayBetweenLines));
         }
     }
 }

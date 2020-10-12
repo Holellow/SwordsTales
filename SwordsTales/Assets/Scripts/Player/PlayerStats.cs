@@ -33,7 +33,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         _gameManager.Respawn();
         Destroy(gameObject);

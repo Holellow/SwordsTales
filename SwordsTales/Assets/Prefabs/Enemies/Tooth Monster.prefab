@@ -288,24 +288,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47580502764a7ff41b1cd07a948010a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 1335162906706999914}
-  wallCheck: {fileID: 1335162904928384253}
-  touchDamageCheck: {fileID: 164487688586940388}
-  groundMask:
+  _groundCheck: {fileID: 1335162906706999914}
+  _wallCheck: {fileID: 1335162904928384253}
+  _touchDamageCheck: {fileID: 164487688586940388}
+  _groundMask:
     serializedVersion: 2
     m_Bits: 256
-  PlayerMask:
+  _PlayerMask:
     serializedVersion: 2
     m_Bits: 1024
-  groundCheckDistance: 1
-  wallCheckDistance: -1
-  movementSpeed: 3
-  maxHealth: 30
-  touchDamage: 1
-  touchDamageCooldown: 1
-  touchDamageWidth: 1.2
-  touchDamageHeight: 1.5
-  knockbackDuration: 0.1
-  knockbackSpeed: {x: 10, y: 5}
-  hitParticle: {fileID: 5840760596913589204, guid: d52b973e2a1b57c4f93c49e614b4dd19,
+  _groundCheckDistance: 1
+  _wallCheckDistance: 1
+  _movementSpeed: 1
+  _maxHealth: 10
+  _touchDamage: 1
+  _touchDamageCooldown: 1
+  _touchDamageWidth: 1
+  _touchDamageHeight: 1
+  _knockbackDuration: 1
+  _knockbackSpeed: {x: 1, y: 1}
+  _hitParticle: {fileID: 2522847968131972560, guid: cb86c8ccfbdf33a43af7b5c641b02b00,
     type: 3}

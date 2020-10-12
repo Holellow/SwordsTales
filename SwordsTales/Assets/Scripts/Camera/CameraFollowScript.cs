@@ -1,20 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CameraFollowScript : MonoBehaviour
+namespace Camera
 {
-    public Transform player;
-    public Vector3 offset;
-    
-    public float smoothing;
-    
-    void FixedUpdate()
+    public class CameraFollowScript : MonoBehaviour
     {
-        if (player != null)
+        public Transform player;
+    
+        public Vector3 offset;
+    
+        public float smoothing;
+    
+        void FixedUpdate()
         {
-            Vector3 newPosition = Vector3.Lerp(transform.position,player.transform.position + offset, smoothing);
-            transform.position = newPosition;
+            if (player != null)
+            {
+                Vector3 newPosition = Vector3.Lerp(transform.position,player.transform.position + offset, smoothing);
+                transform.position = newPosition;
+            }
         }
     }
 }

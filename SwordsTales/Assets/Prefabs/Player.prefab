@@ -177,22 +177,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7267a249ee52aa24e80c5acbdae89d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  v2Direction: {x: 0, y: 0}
-  knockbackSpeed: {x: 10, y: 5}
-  playerAnimator: {fileID: 982981294659531365}
-  player: {fileID: 982981294659531371}
-  jumpGravity: 0.3
-  knockbackDuration: 0.1
-  jumpForce: 10
-  speed: 6
-  direction: 0
-  jumpPressedTime: 0.2
-  jumpRememberer: 0
-  groundRememberer: 0
-  groundRemembererTime: 0.6
+  _v2Direction: {x: 0, y: 0}
+  _knockbackSpeed: {x: 0, y: 0}
+  _runSound: {fileID: 8300000, guid: a35c405291a379e4ba025808a248a1f4, type: 3}
+  _receiveDamageSound: {fileID: 8300000, guid: b87b74b9995bcc041a2db4d61cf88fce, type: 3}
+  _hitSwordSword: {fileID: 8300000, guid: f4d837db2a269a349b7810428e568913, type: 3}
+  _playerAnimator: {fileID: 982981294659531365}
+  _jumpGravity: 0
+  _knockbackDuration: 1
+  _jumpForce: 15
+  _speed: 9
+  _direction: 1
+  _jumpPressedTime: 2
+  _jumpRememberer: 0
+  _groundRememberer: 0
+  _groundRemembererTime: 0.1
   _knockback: 0
-  isGrounded: 1
-  isFacingRight: 1
+  _isGrounded: 0
+  _isFacingRight: 1
   groundCheck: {fileID: 982981295794536767}
   whatIsGround:
     serializedVersion: 2
@@ -235,14 +237,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32d1ff6c59c47946a07db5f873898df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLayers:
+  _enemyLayers:
     serializedVersion: 2
-    m_Bits: 512
-  attackHitBoxPos: {fileID: 2112981146}
-  inputTimer: 1
-  attackRadius: 0.8
-  attackDamage: 10
-  combatEnabled: 1
+    m_Bits: 1024
+  _attackHitBoxPos: {fileID: 2112981146}
+  _receiveDamageSound: {fileID: 8300000, guid: b87b74b9995bcc041a2db4d61cf88fce, type: 3}
+  _inputTimer: 1
+  _attackRadius: 0.5
+  _attackDamage: 5
+  _combatEnabled: 1
   attackPoint: {fileID: 2112981146}
 --- !u!114 &448081613
 MonoBehaviour:
@@ -256,8 +259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53dc63b62388b44b90497b0aa020096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticles: {fileID: 0}
-  playerAnimator: {fileID: 0}
+  deathParticles: {fileID: 2522847968131972560, guid: cb86c8ccfbdf33a43af7b5c641b02b00,
+    type: 3}
+  playerAnimator: {fileID: 982981294659531365}
   healthBar: {fileID: 0}
   maxHealth: 5
   currentHealth: 0

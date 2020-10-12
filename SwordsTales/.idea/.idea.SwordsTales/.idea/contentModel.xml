@@ -48,24 +48,12 @@
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
           </e>
-          <e p="QuestSystem" t="Include">
-            <e p="Quest.cs" t="Include" />
-            <e p="QuestButton.cs" t="Include" />
-            <e p="QuestEvent.cs" t="Include" />
-            <e p="QuestLocation.cs" t="Include" />
-            <e p="QuestManager.cs" t="Include" />
-            <e p="QuestPath.cs" t="Include" />
-          </e>
           <e p="Snare.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="SoundManager.cs" t="Include" />
           </e>
           <e p="Timelines" t="Include">
             <e p="Timeline.cs" t="Include" />
-          </e>
-          <e p="Training" t="Include">
-            <e p="Weapon.cs" t="Include" />
-            <e p="WeaponData.cs" t="Include" />
           </e>
           <e p="Unit.cs" t="Include" />
         </e>

@@ -1,31 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
-public class MainMenu : MonoBehaviour
+namespace MainMenu
 {
-   public AudioMixer AudioMixer;
-   public void PlayGame()
+   public class MainMenu : MonoBehaviour
    {
-      SceneManager.LoadScene(1);
-   }
+      public AudioMixer AudioMixer;
+      public void PlayGame()
+      {
+         SceneManager.LoadScene(1);
+      }
 
-   public void QuitGame()
-   {
-      Application.Quit();
-   }
+      public void QuitGame()
+      {
+         Application.Quit();
+      }
 
-   public void setValue(float volume)
-   {
-      Debug.Log(volume);
-      AudioMixer.SetFloat("Volume",volume);
-   }
+      public void setValue(float volume)
+      {
+         Debug.Log(volume);
+         AudioMixer.SetFloat("Volume",volume);
+      }
 
-   public void SetFullScreen(bool isFullScreen)
-   {
-      Screen.fullScreen = isFullScreen;
+      public void SetFullScreen(bool isFullScreen)
+      {
+         Screen.fullScreen = isFullScreen;
+      }
    }
 }

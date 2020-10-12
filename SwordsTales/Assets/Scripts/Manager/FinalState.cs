@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Player;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinalState : MonoBehaviour
+namespace Manager
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public class FinalState : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            SceneManager.LoadScene(0);
+            if (other.gameObject.GetComponent<PlayerController>())
+            {
+                SceneManager.LoadScene(0);
+            }
         }
-        
     }
 }

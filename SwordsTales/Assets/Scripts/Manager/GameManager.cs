@@ -1,4 +1,5 @@
 ﻿using System;
+using Camera;
 using UnityEngine;
 
 
@@ -6,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Transform respawnPoint;
     [SerializeField] private GameObject player;
-    [SerializeField] private HealthBar healthBar;
     [SerializeField] private CameraFollowScript playerCamera;
 
     [SerializeField] private float respawnTime;

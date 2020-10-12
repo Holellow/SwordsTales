@@ -1,30 +1,32 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Playables;
 
-public class Timeline : MonoBehaviour
+namespace Timelines
 {
-
-    private bool fix;
-    [SerializeField] private Animator playerAnim;
-    [SerializeField] private RuntimeAnimatorController playerContr;
-    [SerializeField] private PlayableDirector _director;
-
-    private void OnEnable()
+    public class Timeline : MonoBehaviour
     {
-        playerContr = playerAnim.runtimeAnimatorController;
-        bool fix = false;
-        playerAnim.runtimeAnimatorController = null;
-    }
+        [SerializeField] private Animator playerAnim;
+        
+        [SerializeField] private RuntimeAnimatorController playerContr;
+        
+        [SerializeField] private PlayableDirector _director;
+        
+        private bool fix;
 
-    void Update()
-    {
-        if (_director.state != PlayState.Playing && !fix)
+        private void OnEnable()
         {
-            fix = true;
-            playerAnim.runtimeAnimatorController = playerContr;
-        } 
+            playerContr = playerAnim.runtimeAnimatorController;
+            bool fix = false;
+            playerAnim.runtimeAnimatorController = null;
+        }
+
+        void Update()
+        {
+            if (_director.state != PlayState.Playing && !fix)
+            {
+                fix = true;
+                playerAnim.runtimeAnimatorController = playerContr;
+            } 
+        }
     }
 }
